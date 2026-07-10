@@ -146,26 +146,14 @@
             animation: float-text 3.5s ease-in-out infinite;
         }
 
-        /* 2. แอนิเมชันพิมพ์ดีดอัจฉริยะ (Typing Cursor & Writing Effect) */
-        @keyframes typing {
-            0%, 10% { width: 0; }
-            45%, 55% { width: 100%; } /* ค้างช่วงพิมพ์เสร็จไว้ให้อ่านง่าย */
-            90%, 100% { width: 0; }
+        /* 2. เคอร์เซอร์กะพริบสำหรับเอฟเฟกต์พิมพ์ดีดไดนามิก */
+        .cursor-blink {
+            border-right: 3px solid #0066cc;
+            animation: blink-caret .75s step-end infinite;
         }
         @keyframes blink-caret {
             from, to { border-color: transparent }
-            50% { border-color: #0066cc; } /* สีของ Cursor ขีดกระพริบ */
-        }
-        .typing-wrapper {
-            display: inline-block;
-            overflow: hidden;
-            border-right: 3px solid #0066cc; /* เส้นเคอร์เซอร์กระพริบด้านขวา */
-            white-space: nowrap;
-            margin: 0;
-            letter-spacing: .05em;
-            animation: 
-                typing 6s steps(30, end) infinite,
-                blink-caret .75s step-end infinite;
+            50% { border-color: #0066cc; }
         }
 
         /* 3. แอนิเมชันเรืองแสงวูบวาบช้าๆ (Pulse Glow Effect) เพื่อเพิ่มมิติความสวยงาม */
@@ -202,6 +190,7 @@
             <nav id="navMenu" class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-semibold relative">
                 <!-- ลิงก์เมนูแต่ละส่วน พร้อมแท็กสำหรับทำเส้นขีดใต้สีน้ำเงินสว่างขึ้นตามส่วนที่อยู่จริง (Active State) -->
                 <a href="#home" class="nav-item py-2 text-brand-600 transition-all duration-300 relative">Home<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-100 transition-transform duration-300 origin-left"></span></a>
+                <a href="#about" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">About Me<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#education" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Education<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#projects" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Works & Projects<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#certifications" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Certificates<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
@@ -238,8 +227,8 @@
                         </h1>
                         <!-- ปรับแต่ง Wrapper ครอบข้อความตำแหน่งให้แสดงแอนิเมชันพิมพ์ดีดและเรืองแสงอย่างเสถียร -->
                         <div class="h-10 sm:h-12 flex items-center overflow-hidden">
-                            <p class="text-xl sm:text-2xl font-extrabold text-brand-600 tracking-wide font-mono typing-wrapper pulse-glow-text">
-                                Digital Business & Info Systems
+                            <p class="text-xl sm:text-2xl font-extrabold text-brand-600 tracking-wide font-mono">
+                                <span id="typewriterText" class="cursor-blink pulse-glow-text pr-1"></span>
                             </p>
                         </div>
                     </div>
@@ -305,6 +294,54 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- [ส่วนข้อมูลเกี่ยวกับฉัน - ABOUT ME]: แนะนำประวัติย่อ ความมุ่งมั่น และจุดเด่นส่วนบุคคล -->
+    <section id="about" class="py-16 relative z-10 border-t border-slate-100 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน -->
+            <div class="text-center mb-10 reveal">
+                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Professional Profile</span>
+                <h2 class="text-4xl sm:text-5xl font-black text-slate-900 mt-2 tracking-tight">About Me</h2>
+                <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+                <!-- การ์ดประวัติย่อและความสนใจหลัก -->
+                <div class="glass-card p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-user-tie text-brand-600"></i> My Passion & Interest
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed font-light">
+                        นักศึกษาชั้นปีที่ 4 คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม สาขาวิชาธุรกิจดิจิทัลและระบบสารสนเทศ มีความหลงใหลในเทคโนโลยีดิจิทัลสมัยใหม่ และมีจุดมุ่งหมายที่จะนำความรู้ด้านการวิเคราะห์ระบบ (System Analysis) และการจัดการฐานข้อมูล (Database & Document Management) มาช่วยเพิ่มประสิทธิภาพและผลลัพธ์ที่จับต้องได้ให้แก่ทีมงานในองค์กร
+                    </p>
+                </div>
+
+                <!-- การ์ด Soft Skills & Languages ดึงมาจาก CV ต้นฉบับ -->
+                <div class="glass-card p-6 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-brain text-brand-600"></i> Key Capabilities
+                        </h3>
+                        <!-- รายการ Soft Skills ชัดเจนจากรูปภาพ CV -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Analytical Thinking</span>
+                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Communication</span>
+                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Team Collaboration</span>
+                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Attention to Detail</span>
+                        </div>
+                    </div>
+                    <!-- ส่วนข้อมูลภาษา (Languages) -->
+                    <div class="pt-3 border-t border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Languages</h4>
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="font-semibold text-slate-700">Thai (Native)</span>
+                            <span class="text-brand-600 font-bold">English (Intermediate - CEFR B1)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1006,6 +1043,52 @@
                 toast.classList.add('translate-y-20', 'opacity-0');
                 toast.classList.remove('translate-y-0', 'opacity-100');
             }, 3000);
+        }
+
+        // 10. ระบบจำลองเอฟเฟกต์พิมพ์ดีดและลบแบบไดนามิกตลอดเวลา (Dynamic Infinite Typewriter Effect)
+        const typewriterPhrases = [
+            "Digital Business & Info Systems",
+            "Data Analytics Enthusiast",
+            "Business Process Analyst"
+        ];
+        let phraseIdx = 0;
+        let charIdx = 0;
+        let isBackspace = false;
+        const typewriterEl = document.getElementById('typewriterText');
+
+        function startTypewriter() {
+            const currentText = typewriterPhrases[phraseIdx];
+            
+            if (isBackspace) {
+                // เอฟเฟกต์การย้อนกลับ/ลบตัวอักษร
+                typewriterEl.textContent = currentText.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                // เอฟเฟกต์การพิมพ์ตัวอักษรทีละตัว
+                typewriterEl.textContent = currentText.substring(0, charIdx + 1);
+                charIdx++;
+            }
+
+            // ตั้งความเร็วในการพิมพ์และลบ
+            let actionDelay = isBackspace ? 30 : 70;
+
+            if (!isBackspace && charIdx === currentText.length) {
+                // เมื่อพิมพ์เสร็จแล้ว ค้างข้อความไว้ให้อ่าน 2 วินาที ก่อนจะทำการลบออก
+                actionDelay = 2000;
+                isBackspace = true;
+            } else if (isBackspace && charIdx === 0) {
+                // เมื่อลบเสร็จแล้ว ให้สลับไปยังประโยคถัดไปในลิสต์
+                isBackspace = false;
+                phraseIdx = (phraseIdx + 1) % typewriterPhrases.length;
+                actionDelay = 400; // จังหวะหยุดพักเล็กน้อยก่อนเริ่มต้นประโยคใหม่
+            }
+
+            setTimeout(startTypewriter, actionDelay);
+        }
+
+        // เริ่มรันระบบพิมพ์ทันทีหลังจากโหลดเนื้อหาหน้าเว็บเสร็จ
+        if (typewriterEl) {
+            startTypewriter();
         }
     </script>
 </body>
