@@ -557,7 +557,7 @@
             <!-- กล่องคอนเทนเนอร์สำหรับเลื่อนสไลด์แนวขวาง (เลื่อนด้านข้าง แถบสถานะ Indicator คํานวณตามสไลด์) -->
             <div id="projectScrollContainer" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide">
                 
-                <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ขนาดการ์ดขยายพิเศษและช่องภาพขยายเป็น h-56) -->
+                <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
                         <img src="images/Projectr01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
@@ -574,14 +574,13 @@
                                 โครงการสร้างแบบจำลองคาดการณ์ปริมาณการใช้ไฟฟ้า โดยเตรียมข้อมูลดิบ (Data Cleaning) และใช้โมเดลวิเคราะห์แนวโน้ม
                             </p>
                         </div>
-                        <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
-                            <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
-                            <p class="text-[10px] text-slate-500 font-medium">
-                                Cleaned datasets, identified energy patterns.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                        <div class="space-y-4">
+                            <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
+                                <p class="text-[10px] text-slate-500 font-medium">
+                                    Cleaned datasets, identified energy patterns.
+                                </p>
+                            </div>
 
                 <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที (ขนาดการ์ดขยายพิเศษและช่องภาพขยายเป็น h-56) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
