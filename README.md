@@ -44,8 +44,7 @@
 
     <!-- สไตล์ตกแต่งเพิ่มเติมเฉพาะจุด (Custom CSS) -->
     <style>
-        
-        /* บังคับขนาดและน้ำหนักของ "ชื่อตัวละครหลักหน้าแรก" ให้ใหญ่มหึมา ป้องกันปัญหาเบราว์เซอร์แคชบน GitHub */
+        /* ─── บังคับขนาดและเอฟเฟกต์สำหรับหัวข้อหน้าปกแรก ─── */
         .hero-title {
             font-size: 3rem !important; /* 48px สำหรับจอเล็ก */
             font-weight: 900 !important;
@@ -59,25 +58,68 @@
             }
         }
 
-        /* บังคับขนาดและน้ำหนักของ "หัวข้อหลักทุกๆ หน้า" ให้เด่นชัด ตัวใหญ่สะกดสายตาแน่นอน */
-        .section-title {
-            font-size: 2.25rem !important; /* 36px */
+        /* ─── เอฟเฟกต์หัวข้อใหญ่ใหม่ที่มีมิติและ "มีอะไรพิเศษ" (Fancy Header & Backlight Glow) ─── */
+        .fancy-header {
+            font-size: 2.25rem !important; /* 36px สำหรับมือถือ */
             font-weight: 900 !important;
             letter-spacing: -0.025em !important;
-            color: #0f172a !important; /* Slate 900 */
             line-height: 1.2 !important;
+            position: relative;
+            display: inline-block;
+            /* ไล่เฉดสีกราเดียนท์พรีเมียมแบบเงาโลหะ Slate-Blue */
+            background: linear-gradient(135deg, #0f172a 30%, #0066cc 70%, #0088ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent !important;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: default;
         }
         @media (min-width: 640px) {
-            .section-title {
+            .fancy-header {
                 font-size: 3rem !important; /* 48px */
             }
         }
         @media (min-width: 768px) {
-            .section-title {
-                font-size: 3.75rem !important; /* 60px - ขนาดใหญ่โดดเด่นสะดุดตา */
+            .fancy-header {
+                font-size: 3.75rem !important; /* 60px ขยายใหญ่สมเกียรติและเด่นชัดสุดๆ */
             }
         }
+        /* เมื่อเอาเมาส์มาวางชี้: ตัวหนังสือขยายสเกลและเปลี่ยนเฉดสีเป็นฟ้าไซอันพร้อมยกตัวขึ้น */
+        .fancy-header:hover {
+            transform: scale(1.02) translateY(-2px);
+            background: linear-gradient(135deg, #0066cc 0%, #0088ff 50%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* เพิ่มเงาสะท้อนลอยเบาๆ */
+            filter: drop-shadow(0 4px 8px rgba(0, 102, 204, 0.12));
+        }
 
+        /* กล่องเก็บหัวข้อสำหรับควบคุมแผงแสงออร่าเรืองแสงด้านหลัง */
+        .fancy-header-container {
+            position: relative;
+            display: inline-block;
+        }
+        /* สร้างวงกลมแสงเงาบางเบาสีฟ้า ซ่อนไว้ด้านหลังตัวหนังสือ */
+        .fancy-header-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(0, 102, 204, 0.12) 0%, transparent 70%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none; /* เพื่อไม่ให้ขัดขวางการชี้เมาส์ */
+        }
+        /* เมื่อชี้เมาส์ที่แถบหัวข้อ แสงออร่าด้านหลังจะค่อยๆ สว่างเรืองแสงขึ้นมา */
+        .fancy-header-container:hover::before {
+            opacity: 1;
+        }
+
+        /* ─── เอฟเฟกต์การ์ดและภาพรวมทั่วไป ─── */
         /* สไตล์การ์ดกระจกโปร่งแสงหรูหรา (Glassmorphic Cards) สำหรับธีมขาว */
         .glass-card {
             background: rgba(255, 255, 255, 0.78); /* พื้นสีขาวโปร่งแสง 78% */
@@ -93,7 +135,6 @@
             transform: translateY(-4px); /* ยกการ์ดลอยขึ้นด้านบน 4px */
         }
 
-        /* */
         /* เอฟเฟกต์ Scroll Reveal เด้งๆ สปริงแบบยืดหยุ่น (Bouncy Elastic Scroll Reveal Effect) */
         .reveal {
             opacity: 0; /* ตอนเริ่มต้นจะซ่อนไว้ (โปร่งใส 100%) */
@@ -173,9 +214,7 @@
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease, border-color 0.4s ease;
         }
 
-        /* ─── เพิ่มเอฟเฟกต์แอนิเมชันตัวอักษรหน้าปกใหม่ ─── */
-
-        /* 1. แอนิเมชันตัวอักษรลอยขึ้นลงแบบคลื่นอย่างนุ่มนวล (Soft Float Animation) */
+        /* ─── แอนิเมชันตัวอักษรลอยขึ้นลงแบบคลื่นอย่างนุ่มนวล (Soft Float Animation) ─── */
         @keyframes float-text {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-8px); }
@@ -183,25 +222,6 @@
         .float-animated-text {
             display: inline-block;
             animation: float-text 3.5s ease-in-out infinite;
-        }
-
-        /* 2. เคอร์เซอร์กะพริบสำหรับเอฟเฟกต์พิมพ์ดีดไดนามิก */
-        .cursor-blink {
-            border-right: 3px solid #0066cc;
-            animation: blink-caret .75s step-end infinite;
-        }
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #0066cc; }
-        }
-
-        /* 3. แอนิเมชันเรืองแสงวูบวาบช้าๆ (Pulse Glow Effect) เพื่อเพิ่มมิติความสวยงาม */
-        @keyframes pulse-glow {
-            0%, 100% { text-shadow: 0 0 2px rgba(0, 102, 204, 0.1); }
-            50% { text-shadow: 0 0 12px rgba(0, 102, 204, 0.4); }
-        }
-        .pulse-glow-text {
-            animation: pulse-glow 3s ease-in-out infinite;
         }
     </style>
 </head>
@@ -225,7 +245,7 @@
                 NONGLUK<span class="text-brand-600">.K</span>
             </a>
             
-            <!-- เมนูลิงก์นำทางตรงกลาง (แสดงเฉพาะบนแท็บเล็ตและเดสก์ท็อปขึ้นไป - เพิ่มเมนู About Me) -->
+            <!-- เมนูลิงก์นำทางตรงกลาง (แสดงตลอดเวลา ไม่หายไปไหน) -->
             <nav id="navMenu" class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-semibold relative">
                 <!-- ลิงก์เมนูแต่ละส่วน พร้อมแท็กสำหรับทำเส้นขีดใต้สีน้ำเงินสว่างขึ้นตามส่วนที่อยู่จริง (Active State) -->
                 <a href="#home" class="nav-item py-2 text-brand-600 transition-all duration-300 relative">Home<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-100 transition-transform duration-300 origin-left"></span></a>
@@ -309,13 +329,17 @@
     <!-- [ส่วนข้อมูลทั่วไปเกี่ยวกับฉัน - ABOUT ME]: แสดงก่อนประวัติการศึกษา มีประวัติย่อ ทักษะและเทคโนโลยีซอฟต์แวร์ที่ใช้ -->
     <section id="about" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อใหญ่ประจำหน้า About Me (ตกแต่งพิเศษตามสั่ง) -->
+            <!-- ส่วนหัวข้อใหญ่ประจำหน้า About Me (ตกแต่งพิเศษมีออร่าด้านหลัง) -->
             <div class="text-center mb-12 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
                     <i class="fa-solid fa-user-tie animate-bounce"></i>
                     <span class="text-xs font-bold uppercase tracking-widest font-mono">Professional Profile</span>
                 </div>
-                <h2 class="section-title">About <span class="shimmer-text">Me</span></h2>
+                <div class="block">
+                    <div class="fancy-header-container">
+                        <h2 class="fancy-header">About Me</h2>
+                    </div>
+                </div>
                 <!-- เส้นความคืบหน้าตกแต่งเคลื่อนไหวได้ใต้หัวข้อหลัก -->
                 <div class="relative h-2 w-24 mx-auto mt-4 overflow-hidden rounded-full bg-slate-100">
                     <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-600 to-cyan-400 rounded-full animate-pulse" style="animation-duration: 2s;"></div>
@@ -363,7 +387,7 @@
                     </div>
                 </div>
 
-                <!-- 2. บล็อกซอฟต์แวร์เครื่องมือและการพัฒนา (Software) -->
+                <!-- 2. บล็อกซอฟต์แวร์เครื่องมือและการพัฒนา (Software & Tools) -->
                 <div class="reveal glass-card p-6 rounded-2xl flex flex-col justify-between bg-white shadow-sm hover:shadow-md transition-all duration-300">
                     <div>
                         <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
@@ -387,7 +411,7 @@
                     </div>
                 </div>
 
-                <!-- 3. บล็อกทักษะหลักการทำงานและพฤติกรรม (Skill) -->
+                <!-- 3. บล็อกทักษะหลักการทำงานและพฤติกรรม (Soft Skills) -->
                 <div class="reveal glass-card p-6 rounded-2xl flex flex-col justify-between bg-white shadow-sm hover:shadow-md transition-all duration-300">
                     <div>
                         <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
@@ -422,18 +446,22 @@
         </div>
     </section>
 
-    <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ (ถัดจาก About Me) -->
+    <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ -->
     <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นและตกแต่งเฉพาะจุดตามโจทย์ -->
+            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นและตกแต่งด้วย Fancy Effect -->
             <div class="text-center mb-12 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
                     <i class="fa-solid fa-graduation-cap animate-bounce"></i>
                     <span class="text-xs font-bold uppercase tracking-widest font-mono">Academic Timeline</span>
                 </div>
-                <h2 class="section-title">Education & <span class="text-brand-600">Credentials</span></h2>
+                <div class="block">
+                    <div class="fancy-header-container">
+                        <h2 class="fancy-header">Education</h2>
+                    </div>
+                </div>
                 <div class="relative h-2 w-24 mx-auto mt-4 overflow-hidden rounded-full bg-slate-100">
-                    <div class="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-brand-600 to-indigo-500 rounded-full animate-pulse" style="animation-duration: 2s;"></div>
+                    <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-600 to-cyan-400 rounded-full animate-pulse" style="animation-duration: 2s;"></div>
                 </div>
             </div>
 
@@ -486,14 +514,18 @@
         </div>
     </section>
 
-    <!-- [ส่วนผลงานและโครงการพัฒนา - WORKS & PROJECTS]: แสดงการ์ดผลงานโปรเจกต์ 3 ชิ้นพร้อมสไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
+    <!-- [ส่วนผลงานและโครงการพัฒนา - WORKS & PROJECTS]: แสดงการ์ดผลงานโปรเจกต์ 3 ชิ้นพร้อมสไลด์แนวนอน ขยายขนาดช่องภาพ/วิดีโอให้เต็มตา -->
     <section id="projects" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายให้เน้นหัวข้อเด่นชัดสุดๆ -->
+            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายให้เน้นหัวข้อเด่นชัดสุดๆ ด้วย Fancy Effect -->
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Academic Excellence</span>
-                    <h2 class="section-title">Works & Projects</h2>
+                    <div class="block mt-1">
+                        <div class="fancy-header-container text-left">
+                            <h2 class="fancy-header">Works & Projects</h2>
+                        </div>
+                    </div>
                     <p class="text-slate-500 mt-2 text-sm">ผลงานและโครงการพัฒนาเว็บไซต์/โมเดลวิเคราะห์ข้อมูลที่ผ่านมา (สไลด์เลื่อนด้านข้าง)</p>
                 </div>
                 
@@ -508,22 +540,22 @@
                 </div>
             </div>
 
-            <!-- กล่องคอนเทนเนอร์สำหรับเลื่อนสไลด์แนวขวาง -->
+            <!-- กล่องคอนเทนเนอร์สำหรับเลื่อนสไลด์แนวขวาง (เลื่อนด้านข้าง แถบสถานะ Indicator คํานวณตามสไลด์) -->
             <div id="projectScrollContainer" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide">
                 
-                <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ -->
-                <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-40 bg-slate-100 overflow-hidden">
+                <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ขนาดการ์ดขยายพิเศษและช่องภาพขยายเป็น h-56) -->
+                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+                    <div class="relative h-56 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[9px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS</span>
-                                <span class="text-[9px] text-slate-400 font-mono">Oct 2025</span>
+                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
                             </div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Thailand</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Thailand</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
                                 โครงการสร้างแบบจำลองคาดการณ์ปริมาณการใช้ไฟฟ้า โดยเตรียมข้อมูลดิบ (Data Cleaning) และใช้โมเดลวิเคราะห์แนวโน้ม
                             </p>
@@ -537,21 +569,21 @@
                     </div>
                 </div>
 
-                <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที -->
-                <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-40 bg-slate-100 overflow-hidden">
+                <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที (ขนาดการ์ดขยายพิเศษและช่องภาพขยายเป็น h-56) -->
+                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+                    <div class="relative h-56 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=800&auto=format&fit=crop" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[9px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">UI/UX REDESIGN</span>
-                                <span class="text-[9px] text-slate-400 font-mono">Nov 2024</span>
+                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">UI/UX REDESIGN</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
                             </div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                ปรับปรุง UI/UX บนแอป TrueID ผ่าน User Research และวิเคราะห์พฤติกรรม เพื่อสร้าง Interactive Prototype บน Figma
+                                ปรับปรุง UI/UX บนแอป TrueID ผ่าน User Research และวิเคราะห์พฤทีอกรรม เพื่อสร้าง Interactive Prototype บน Figma
                             </p>
                         </div>
                         <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
@@ -563,27 +595,27 @@
                     </div>
                 </div>
 
-                <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) - ปรับเปลี่ยนรูปแบบเป็นตัวเล่นวิดีโอ (Video Player Container) -->
-                <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-40 bg-slate-900 overflow-hidden">
-                        <!-- โหลดตัวอย่างวิดีโอ Abstract HUD/Digital Visualization มูฟเม้นท์สวยหรูจาก Pexels เป็นตัวแทนของความล้ำลึกแบบ AR -->
+                <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) - ปรับเปลี่ยนรูปแบบเป็นตัวเล่นวิดีโอเดโมขนาดใหญ่ขยายจุใจ h-56 -->
+                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <!-- โหลดตัวอย่างวิดีโอจำลองสามมิติมูฟเม้นท์ล้ำยุค เพื่อเป็นตัวแทนของเทคโนโลยี AR -->
                         <video class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-750" autoplay loop muted playsinline>
                             <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054273b1e2e3dbd0ec0b0213ef2c3c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none"></div>
                         <!-- ไอคอนลอยสัญลักษณ์ความเคลื่อนไหววิดีโอที่มุมขวาบน -->
                         <div class="absolute top-3 right-3 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md flex items-center gap-1">
                             <i class="fa-solid fa-play animate-pulse"></i> VIDEO DEMO
                         </div>
                     </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[9px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">AUGMENTED REALITY</span>
-                                <span class="text-[9px] text-slate-400 font-mono">Jan 2024</span>
+                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">AUGMENTED REALITY</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Jan 2024</span>
                             </div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
                                 การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี ผสานกราฟิกสามมิติเพื่อส่งเสริมการเรียนรู้พิพิธภัณฑ์ยุคใหม่
                             </p>
@@ -613,7 +645,11 @@
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Verified Credentials</span>
-                    <h2 class="section-title">Certifications & Training</h2>
+                    <div class="block mt-1">
+                        <div class="fancy-header-container text-left">
+                            <h2 class="fancy-header">Certifications & Training</h2>
+                        </div>
+                    </div>
                     <p class="text-slate-500 mt-2 text-sm">ใบรับรองและประกาศนียบัตรวิชาชีพ (เลื่อนดูด้านข้างได้)</p>
                 </div>
                 
@@ -753,11 +789,15 @@
     <!-- [ส่วนงานกิจกรรมช่วยเหลือมหาวิทยาลัย - ACTIVITIES]: สไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
     <section id="activities" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- หัวข้อหลักประจำหน้ากิจกรรม - ขยายความเด่นและเพิ่มปุ่มนำทาง -->
+            <!-- หัวข้อหลักประจำหน้ากิจกรรม - ตกแต่งด้วยเอฟเฟกต์ Fancy -->
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Student Leadership</span>
-                    <h2 class="section-title">Activities</h2>
+                    <div class="block mt-1">
+                        <div class="fancy-header-container text-left">
+                            <h2 class="fancy-header">Activities</h2>
+                        </div>
+                    </div>
                     <p class="text-slate-500 mt-2 text-sm">กิจกรรมและงานช่วยเหลือคณะเพื่อสาธารณประโยชน์ที่ได้เข้าร่วม (สไลด์เลื่อนด้านข้าง)</p>
                 </div>
                 
@@ -779,7 +819,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
                     <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop', 'MSU Open House 2024 Booth Guide')">
                         <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="MSU Open House Activity" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-brand-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Booth Staff & Guide</span>
                         </div>
@@ -803,7 +843,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
                     <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop', 'MBS Freshy Day Staff')">
                         <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-indigo-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Event Organizer Staff</span>
                         </div>
@@ -1027,7 +1067,7 @@
             }
         });
 
-        // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight - เพิ่มการตรวจจับหมวดหมู่ #about)
+        // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight - ตรวจจับครบทุกหน้า)
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav-item');
 
@@ -1068,6 +1108,7 @@
             document.body.classList.add('overflow-hidden'); // ห้ามขยับเลื่อนจอหลังเบื้องหลังขณะเปิดอยู่
         }
 
+        // ปิดการทำงานของ Resume original Pop-up
         function closeCVModal() {
             document.getElementById('cvModal').classList.add('hidden'); // ปิดหน้าต่างลงไป
             document.body.classList.remove('overflow-hidden'); // อนุญาตให้เลื่อนจอเบื้องหลังได้ตามปกติ
@@ -1081,6 +1122,7 @@
             document.body.classList.add('overflow-hidden');
         }
 
+        // ปิดกล่อง Lightbox ใบประกาศนียบัตร
         function closeLightbox() {
             document.getElementById('lightboxModal').classList.add('hidden'); // ซ่อนป๊อปอัพลงไป
             document.body.classList.remove('overflow-hidden');
