@@ -212,7 +212,7 @@
         <div class="glow-orb bg-cyan-400 w-[380px] h-[380px] top-[35%] left-[25%]"></div>
     </div>
 
-    <!-- [แถบเมนูด้านบน]: แถบเมนูนำทางอัจฉริยะ ซ่อนและแสดงอัตโนมัติ (Smart Navigation Header) -->
+    <!-- [แถบเมนูด้านบน]: แถบเมนูนำทางอัจฉริยะ แสดงค้างตลอดแต่มีสไตล์ (Navigation Header) -->
     <header id="mainHeader" class="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm translate-y-0">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- โลโก้แบรนด์ส่วนตัวด้านซ้าย -->
@@ -220,10 +220,11 @@
                 NONGLUK<span class="text-brand-600">.K</span>
             </a>
             
-            <!-- เมนูลิงก์นำทางตรงกลาง (แสดงเฉพาะบนแท็บเล็ตและเดสก์ท็อปขึ้นไป - ไม่มี About Me ตามสั่ง) -->
+            <!-- เมนูลิงก์นำทางตรงกลาง (แสดงเฉพาะบนแท็บเล็ตและเดสก์ท็อปขึ้นไป - เพิ่มเมนู About Me) -->
             <nav id="navMenu" class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-semibold relative">
                 <!-- ลิงก์เมนูแต่ละส่วน พร้อมแท็กสำหรับทำเส้นขีดใต้สีน้ำเงินสว่างขึ้นตามส่วนที่อยู่จริง (Active State) -->
                 <a href="#home" class="nav-item py-2 text-brand-600 transition-all duration-300 relative">Home<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-100 transition-transform duration-300 origin-left"></span></a>
+                <a href="#about" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">About Me<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#education" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Education<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#projects" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Works & Projects<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#certifications" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Certificates<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
@@ -254,6 +255,7 @@
                     
                     <!-- ส่วนหัวข้อหลัก: ชื่อเล่นที่มีเอฟเฟกต์สีส่องแสงวิ่งผ่าน และสาขาวิชาเรียนหลักที่มีลูกเล่นขยับได้ -->
                     <div class="space-y-3">
+                        <span class="block text-xs font-black tracking-[0.25em] text-brand-600 uppercase animate-pulse">Personal Portfolio 2026</span>
                         <h1 class="hero-title">
                             <!-- เพิ่มคลาส float-animated-text ให้คำทักทายลอยขึ้นลงเบาๆ -->
                             <span class="float-animated-text">Hi, I'm</span> <span class="shimmer-text">Nongluk</span>
@@ -331,36 +333,139 @@
         </div>
     </section>
 
-    <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ (ถัดจาก Home เสมอ) -->
+    <!-- [ส่วนข้อมูลทั่วไปเกี่ยวกับฉัน - ABOUT ME]: แสดงก่อนประวัติการศึกษา มีประวัติย่อ ทักษะและเทคโนโลยีซอฟต์แวร์ที่ใช้ -->
+    <section id="about" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- ส่วนหัวข้อใหญ่ประจำหน้า About Me -->
+            <div class="text-center mb-12 reveal">
+                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Professional Profile</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- โครงสร้างกริดแบ่งหมวดหมู่ข้อมูล 3 บล็อกใหญ่: ประวัติย่อ, ซอฟต์แวร์คอมพิวเตอร์, ทักษะหลัก -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. บล็อกข้อมูลส่วนตัว (Personal Information) -->
+                <div class="reveal glass-card p-6 rounded-2xl flex flex-col justify-between bg-white shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="space-y-5">
+                        <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center text-brand-600 text-lg">
+                                <i class="fa-solid fa-address-card"></i>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900">Personal Information</h3>
+                        </div>
+                        <!-- รายละเอียดข้อมูลทั่วไป -->
+                        <ul class="space-y-3.5 text-xs text-slate-600">
+                            <li class="flex flex-col">
+                                <span class="font-extrabold text-slate-400 uppercase tracking-wider text-[10px]">Full Name</span>
+                                <span class="text-sm font-semibold text-slate-800 mt-0.5">Nongluk Kluanthaisong</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <span class="font-extrabold text-slate-400 uppercase tracking-wider text-[10px]">Email Contact</span>
+                                <span class="text-sm font-semibold text-slate-800 mt-0.5 break-all">nonglukkluanthaisong@gmail.com</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <span class="font-extrabold text-slate-400 uppercase tracking-wider text-[10px]">Address Residence</span>
+                                <span class="text-sm font-semibold text-slate-800 mt-0.5">Mahasarakham, Thailand</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <span class="font-extrabold text-slate-400 uppercase tracking-wider text-[10px]">Internship Duration</span>
+                                <span class="text-sm font-semibold text-brand-600 mt-0.5">1 December 2026 – 31 March 2027</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. บล็อกซอฟต์แวร์เครื่องมือและการพัฒนา (Software) -->
+                <div class="reveal glass-card p-6 rounded-2xl flex flex-col justify-between bg-white shadow-sm hover:shadow-md transition-all duration-300">
+                    <div>
+                        <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600 text-lg">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900">Software & Tools</h3>
+                        </div>
+                        <!-- กลุ่มป้ายแท็กเครื่องมือการทำงานที่เชี่ยวชาญ -->
+                        <div class="flex flex-wrap gap-2 pt-5">
+                            <span class="px-3 py-1.5 bg-brand-50 text-brand-700 rounded-xl text-xs font-semibold border border-brand-100 hover:scale-105 transition-transform duration-200">Microsoft Office</span>
+                            <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-xl text-xs font-semibold border border-cyan-100 hover:scale-105 transition-transform duration-200">Canva</span>
+                            <span class="px-3 py-1.5 bg-amber-50 text-amber-700 rounded-xl text-xs font-semibold border border-amber-100 hover:scale-105 transition-transform duration-200">Power BI</span>
+                            <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-xl text-xs font-semibold border border-purple-100 hover:scale-105 transition-transform duration-200">AI Studio</span>
+                            <span class="px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-xl text-xs font-semibold border border-indigo-100 hover:scale-105 transition-transform duration-200">Figma</span>
+                            <span class="px-3 py-1.5 bg-orange-50 text-orange-700 rounded-xl text-xs font-semibold border border-orange-100 hover:scale-105 transition-transform duration-200">n8n Workflow</span>
+                            <span class="px-3 py-1.5 bg-red-50 text-red-700 rounded-xl text-xs font-semibold border border-red-100 hover:scale-105 transition-transform duration-200">HTML (Basic)</span>
+                            <span class="px-3 py-1.5 bg-sky-50 text-sky-700 rounded-xl text-xs font-semibold border border-sky-100 hover:scale-105 transition-transform duration-200">CSS (Basic)</span>
+                            <span class="px-3 py-1.5 bg-violet-50 text-violet-700 rounded-xl text-xs font-semibold border border-violet-100 hover:scale-105 transition-transform duration-200">PHP (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. บล็อกทักษะหลักการทำงานและพฤติกรรม (Skill) -->
+                <div class="reveal glass-card p-6 rounded-2xl flex flex-col justify-between bg-white shadow-sm hover:shadow-md transition-all duration-300">
+                    <div>
+                        <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-pink-50 flex items-center justify-center text-pink-600 text-lg">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900">Soft Skills</h3>
+                        </div>
+                        <!-- กลุ่มป้ายแท็กทักษะทั่วไปของการทำงาน -->
+                        <div class="flex flex-col gap-3 pt-5">
+                            <div class="flex items-center gap-2 group cursor-default">
+                                <i class="fa-solid fa-brain text-brand-600 text-sm group-hover:rotate-12 transition-transform"></i>
+                                <span class="text-sm font-semibold text-slate-700 group-hover:text-brand-600 transition-colors">Analytical Thinking</span>
+                            </div>
+                            <div class="flex items-center gap-2 group cursor-default">
+                                <i class="fa-solid fa-comments text-emerald-600 text-sm group-hover:translate-x-1 transition-transform"></i>
+                                <span class="text-sm font-semibold text-slate-700 group-hover:text-emerald-600 transition-colors">Communication</span>
+                            </div>
+                            <div class="flex items-center gap-2 group cursor-default">
+                                <i class="fa-solid fa-people-group text-indigo-600 text-sm group-hover:scale-110 transition-transform"></i>
+                                <span class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600 transition-colors">Team Collaboration</span>
+                            </div>
+                            <div class="flex items-center gap-2 group cursor-default">
+                                <i class="fa-solid fa-magnifying-glass text-amber-600 text-sm group-hover:translate-y-[-2px] transition-transform"></i>
+                                <span class="text-sm font-semibold text-slate-700 group-hover:text-amber-600 transition-colors">Attention to Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ (ถัดจาก About Me) -->
     <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน -->
+            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นชัดขึ้น -->
             <div class="text-center mb-12 reveal">
                 <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Academic Timeline</span>
                 <h2 class="section-title">Education</h2>
                 <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <!-- กล่องข้อมูลการศึกษาแบบกระจกโปร่งแสง (Glassmorphic) -->
+            <!-- กล่องข้อมูลการศึกษาแบบกระจกโปร่งแสง (Glassmorphic) ปรับแต่งลวดลายพื้นหลัง -->
             <div class="reveal">
-                <div class="glass-card p-6 md:p-8 rounded-2xl relative overflow-hidden group shadow-sm">
+                <div class="glass-card p-6 md:p-8 rounded-2xl relative overflow-hidden group shadow-sm hover:border-brand-300">
                     <!-- ประกายแสงตกแต่งสีฟ้ามุมขวาบนของการ์ด -->
                     <div class="absolute top-0 right-0 w-48 h-48 bg-brand-100/20 rounded-full blur-3xl pointer-events-none"></div>
                     
                     <!-- แถวหัวข้อหลัก: โลโก้จำลองและข้อมูลสถาบันการศึกษา -->
                     <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                         <div class="flex items-center gap-4">
-                            <!-- ไอคอนรูปหมวกปริญญาโดดเด่นสีน้ำเงิน -->
-                            <div class="w-14 h-14 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 flex-shrink-0 text-2xl shadow-sm">
+                            <!-- ไอคอนรูปหมวกปริญญาโดดเด่นสีน้ำเงิน ครอบทับด้วยวงแหวนสปินเนอร์เรืองแสงอ่อนๆ -->
+                            <div class="w-14 h-14 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 flex-shrink-0 text-2xl shadow-sm relative group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
                                 <i class="fa-solid fa-graduation-cap"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-black text-slate-900">Mahasarakham University (MSU)</h3>
+                                <h3 class="text-xl font-black text-slate-900 group-hover:text-brand-600 transition-colors duration-300">Mahasarakham University (MSU)</h3>
                                 <p class="text-xs text-slate-500 font-semibold">Mahasarakham Business School (MBS)</p>
                             </div>
                         </div>
                         <!-- แท็กกำหนดกรอบระยะเวลาปีการศึกษา -->
-                        <div class="bg-brand-50 text-brand-700 px-4 py-1.5 rounded-full text-xs font-bold border border-brand-100/50 font-mono">
+                        <div class="bg-brand-50 text-brand-700 px-4 py-1.5 rounded-full text-xs font-bold border border-brand-100/50 font-mono shadow-sm group-hover:bg-brand-100 transition-colors">
                             June 2023 – Present (Expected: May 2027)
                         </div>
                     </div>
@@ -375,8 +480,8 @@
                             <div>
                                 <h4 class="text-[10px] font-extrabold uppercase tracking-wider text-slate-400">Current GPAX</h4>
                                 <div class="flex items-baseline gap-1 mt-1">
-                                    <span class="text-3xl font-black text-brand-600">3.68</span>
-                                    <span class="text-slate-400 text-xs">/ 4.00</span>
+                                    <span class="text-3xl font-black text-brand-600 bg-brand-50 px-2 rounded-lg border border-brand-100 shadow-sm animate-pulse">3.68</span>
+                                    <span class="text-slate-400 text-xs font-bold">/ 4.00</span>
                                 </div>
                             </div>
                             <div class="sm:border-l sm:border-slate-100 sm:pl-6">
@@ -419,7 +524,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-40 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent"></div>
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -445,7 +550,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-40 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=800&auto=format&fit=crop" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent"></div>
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -923,7 +1028,7 @@
             }
         });
 
-        // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight - นำ About out ออก)
+        // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight - เพิ่มการตรวจจับหมวดหมู่ #about)
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav-item');
 
