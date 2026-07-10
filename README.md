@@ -253,24 +253,22 @@
                         Available for Internship: 1 Dec 2026 – 31 Mar 2027
                     </span>
                     
-                    <!-- ส่วนหัวข้อหลัก: ชื่อเล่นที่มีเอฟเฟกต์สีส่องแสงวิ่งผ่าน และสาขาวิชาเรียนหลักที่มีลูกเล่นขยับได้ -->
+                    <!-- ส่วนหัวข้อหลัก: ชื่อเล่นที่มีเอฟเฟกต์สีส่องแสงวิ่งผ่าน และสาขาวิชาเรียนหลัก -->
                     <div class="space-y-3">
                         <span class="block text-xs font-black tracking-[0.25em] text-brand-600 uppercase animate-pulse">Personal Portfolio 2026</span>
                         <h1 class="hero-title">
                             <!-- เพิ่มคลาส float-animated-text ให้คำทักทายลอยขึ้นลงเบาๆ -->
                             <span class="float-animated-text">Hi, I'm</span> <span class="shimmer-text">Nongluk</span>
                         </h1>
-                        <!-- ปรับแต่ง Wrapper ครอบข้อความตำแหน่งให้แสดงแอนิเมชันพิมพ์ดีดและเรืองแสงอย่างเสถียร -->
-                        <div class="h-10 sm:h-12 flex items-center overflow-hidden">
-                            <p class="text-xl sm:text-2xl font-extrabold text-brand-600 tracking-wide font-mono">
-                                <span id="typewriterText" class="cursor-blink pulse-glow-text pr-1"></span>
-                            </p>
-                        </div>
+                        <!-- หัวข้อตำแหน่งที่เด่นชัด มินิมอล และเป็นทางการ -->
+                        <h2 class="text-xl sm:text-2xl font-black text-slate-800 tracking-wide font-sans mt-2">
+                            Digital Business & Information Systems
+                        </h2>
                     </div>
                     
-                    <!-- ย่อหน้าคำบรรยายเป้าหมายและจุดมุ่งหมายในวิชาชีพ -->
+                    <!-- ย่อหน้าคำบรรยายสั้นๆ สไตล์หน้าปกสะดุดตา -->
                     <p class="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed font-light">
-                        A fourth-year Digital Business and Information Systems student. Passionate about data analysis, business process analysis, and leveraging digital workflows to optimize modern systems with analytics intelligence.
+                        A Digital Business and Information Systems student focused on business analytics, data processes, and smart digital systems.
                     </p>
 
                     <!-- ปุ่มดำเนินการอย่างรวดเร็ว (ดูโปรเจกต์ และ ปุ่มดูไฟล์ CV เรซูเม่ออริจินัล) -->
@@ -285,31 +283,6 @@
                             <i class="fa-solid fa-file-invoice text-brand-600"></i>
                             Refer to Nongluk.cv.jpg
                         </button>
-                    </div>
-
-                    <!-- แถวสรุปข้อมูลสถิติ/เกรดเฉลี่ยอย่างรวดเร็ว (Stats Counters) -->
-                    <div class="grid grid-cols-3 gap-6 sm:gap-10 pt-6 border-t border-slate-200/80 max-w-md ml-0">
-                        <!-- กล่องเกรดเฉลี่ยสะสมปัจจุบัน -->
-                        <div class="space-y-1">
-                            <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-mono tracking-tight flex items-baseline gap-1">
-                                3.68<span class="text-xs text-brand-600 font-semibold">/4</span>
-                            </h3>
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Current GPAX</p>
-                        </div>
-                        <!-- จำนวนใบเซอร์ทั้งหมดที่มี -->
-                        <div class="space-y-1">
-                            <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-mono tracking-tight">
-                                5+
-                            </h3>
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Credentials</p>
-                        </div>
-                        <!-- จำนวนผลงานโปรเจกต์เชิงวิชาการหลัก -->
-                        <div class="space-y-1">
-                            <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-mono tracking-tight">
-                                3+
-                            </h3>
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Main Projects</p>
-                        </div>
                     </div>
                 </div>
 
@@ -1134,52 +1107,6 @@
                 toast.classList.add('translate-y-20', 'opacity-0');
                 toast.classList.remove('translate-y-0', 'opacity-100');
             }, 3000);
-        }
-
-        // 10. ระบบจำลองเอฟเฟกต์พิมพ์ดีดและลบแบบไดนามิกตลอดเวลา (Dynamic Infinite Typewriter Effect)
-        const typewriterPhrases = [
-            "Digital Business & Info Systems",
-            "Data Analytics Enthusiast",
-            "Business Process Analyst"
-        ];
-        let phraseIdx = 0;
-        let charIdx = 0;
-        let isBackspace = false;
-        const typewriterEl = document.getElementById('typewriterText');
-
-        function startTypewriter() {
-            const currentText = typewriterPhrases[phraseIdx];
-            
-            if (isBackspace) {
-                // เอฟเฟกต์การย้อนกลับ/ลบตัวอักษร
-                typewriterEl.textContent = currentText.substring(0, charIdx - 1);
-                charIdx--;
-            } else {
-                // เอฟเฟกต์การพิมพ์ตัวอักษรทีละตัว
-                typewriterEl.textContent = currentText.substring(0, charIdx + 1);
-                charIdx++;
-            }
-
-            // ตั้งความเร็วในการพิมพ์และลบ
-            let actionDelay = isBackspace ? 30 : 70;
-
-            if (!isBackspace && charIdx === currentText.length) {
-                // เมื่อพิมพ์เสร็จแล้ว ค้างข้อความไว้ให้อ่าน 2 วินาที ก่อนจะทำการลบออก
-                actionDelay = 2000;
-                isBackspace = true;
-            } else if (isBackspace && charIdx === 0) {
-                // เมื่อลบเสร็จแล้ว ให้สลับไปยังประโยคถัดไปในลิสต์
-                isBackspace = false;
-                phraseIdx = (phraseIdx + 1) % typewriterPhrases.length;
-                actionDelay = 400; // จังหวะหยุดพักเล็กน้อยก่อนเริ่มต้นประโยคใหม่
-            }
-
-            setTimeout(startTypewriter, actionDelay);
-        }
-
-        // เริ่มรันระบบพิมพ์ทันทีหลังจากโหลดเนื้อหาหน้าเว็บเสร็จ
-        if (typewriterEl) {
-            startTypewriter();
         }
     </script>
 </body>
