@@ -347,7 +347,7 @@
             </div>
 
             <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
-            <div class="reveal glass-card p-6 md:p-8 rounded-2xl mb-10 border-l-4 border-l-brand-600 bg-white shadow-sm">
+            <div class="reveal glass-card p-4 md:p-6 rounded-2xl mb-8 border-l-4 border-l-brand-600 bg-white shadow-sm">
                 <!-- ปรับตัวหนังสือให้เล็กลง: มือถือเล็กลงเป็น text-sm / แท็บเล็ตเป็น text-base / คอมพิวเตอร์เป็น text-lg -->
                 <p class="text-sm sm:text-base md:text-lg text-slate-700 font-normal leading-relaxed font-sans text-justify">
         A fourth-year Digital Business and Information Systems student with a strong interest in data analysis, 
