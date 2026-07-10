@@ -348,11 +348,13 @@
 
             <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
             <div class="reveal glass-card p-6 md:p-8 rounded-2xl mb-10 border-l-4 border-l-brand-600 bg-white shadow-sm">
-                <p class="text-base sm:text-lg md:text-xl text-slate-700 font-medium leading-relaxed font-sans">
-                    A fourth-year Digital Business and Information Systems student with a strong interest in data analysis, business process analysis, data and document                       management, and leveraging digital technologies to improve work efficiency. Passionate about combining analytical thinking with creativity to solve                        complex problems and develop effective solutions.
+                <p class="text-base sm:text-lg md:text-xl text-slate-700 font-medium leading-relaxed font-sans text-justify">
+        A fourth-year Digital Business and Information Systems student with a strong interest in data analysis, 
+        business process analysis, data and document management, and leveraging digital technologies to improve 
+        work efficiency. Passionate about combining analytical thinking with creativity to solve complex problems 
+        and develop effective solutions.
                 </p>
             </div>
-
             <!-- โครงสร้างกริดแบ่งหมวดหมู่ข้อมูล 3 บล็อกใหญ่: ประวัติย่อ, ซอฟต์แวร์คอมพิวเตอร์, ทักษะหลัก -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
