@@ -93,16 +93,21 @@
             transform: translateY(-4px); /* ยกการ์ดลอยขึ้นด้านบน 4px */
         }
 
-        /* เอฟเฟกต์ Scroll Reveal (ค่อยๆ โผล่และลอยขึ้นเมื่อเลื่อนหน้าจอมาเจอ) */
+        /* */
+        /* เอฟเฟกต์ Scroll Reveal เด้งๆ สปริงแบบยืดหยุ่น (Bouncy Elastic Scroll Reveal Effect) */
         .reveal {
             opacity: 0; /* ตอนเริ่มต้นจะซ่อนไว้ (โปร่งใส 100%) */
-            transform: translateY(30px) scale(0.98); /* ย่อตัวลงเล็กน้อยและดันลงล่าง 30px */
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); /* เวลาในการแสดงผล 0.8 วินาที */
+            transform: translateY(40px) scale(0.95); /* ย่อตัวลงเล็กน้อยและดันลงล่าง 40px */
+            filter: blur(4px); /* ปรับเอฟเฟกต์เบลอให้ตื่นตาตื่นใจตอนเปิด */
+            transition: opacity 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                        transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                        filter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); /* แอนิเมชันเด้งสปริงแบบ Back-Out */
         }
         /* คลาสที่จะถูกเติมอัตโนมัติด้วย JavaScript เมื่อเลื่อนมาเจอจุดแสดงผล */
         .reveal.active {
             opacity: 1; /* ปรากฏตัวชัดเจน */
-            transform: translateY(0) scale(1); /* กลับสู่ตำแหน่งและขนาดปกติ */
+            transform: translateY(0) scale(1); /* กลับสู่ตำแหน่งและขนาดปกติแบบเด้ง */
+            filter: blur(0px); /* สลายความเบลอออก */
         }
 
         /* แอนิเมชันข้อความส่องประกายวิ่งผ่าน (Shimmer Text Effect) ตรงชื่อ Nongluk */
@@ -304,11 +309,17 @@
     <!-- [ส่วนข้อมูลทั่วไปเกี่ยวกับฉัน - ABOUT ME]: แสดงก่อนประวัติการศึกษา มีประวัติย่อ ทักษะและเทคโนโลยีซอฟต์แวร์ที่ใช้ -->
     <section id="about" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อใหญ่ประจำหน้า About Me -->
+            <!-- ส่วนหัวข้อใหญ่ประจำหน้า About Me (ตกแต่งพิเศษตามสั่ง) -->
             <div class="text-center mb-12 reveal">
-                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Professional Profile</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
+                    <i class="fa-solid fa-user-tie animate-bounce"></i>
+                    <span class="text-xs font-bold uppercase tracking-widest font-mono">Professional Profile</span>
+                </div>
+                <h2 class="section-title">About <span class="shimmer-text">Me</span></h2>
+                <!-- เส้นความคืบหน้าตกแต่งเคลื่อนไหวได้ใต้หัวข้อหลัก -->
+                <div class="relative h-2 w-24 mx-auto mt-4 overflow-hidden rounded-full bg-slate-100">
+                    <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-600 to-cyan-400 rounded-full animate-pulse" style="animation-duration: 2s;"></div>
+                </div>
             </div>
 
             <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
@@ -414,11 +425,16 @@
     <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ (ถัดจาก About Me) -->
     <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นชัดขึ้น -->
+            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นและตกแต่งเฉพาะจุดตามโจทย์ -->
             <div class="text-center mb-12 reveal">
-                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Academic Timeline</span>
-                <h2 class="section-title">Education</h2>
-                <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
+                    <i class="fa-solid fa-graduation-cap animate-bounce"></i>
+                    <span class="text-xs font-bold uppercase tracking-widest font-mono">Academic Timeline</span>
+                </div>
+                <h2 class="section-title">Education & <span class="text-brand-600">Credentials</span></h2>
+                <div class="relative h-2 w-24 mx-auto mt-4 overflow-hidden rounded-full bg-slate-100">
+                    <div class="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-brand-600 to-indigo-500 rounded-full animate-pulse" style="animation-duration: 2s;"></div>
+                </div>
             </div>
 
             <!-- กล่องข้อมูลการศึกษาแบบกระจกโปร่งแสง (Glassmorphic) ปรับแต่งลวดลายพื้นหลัง -->
