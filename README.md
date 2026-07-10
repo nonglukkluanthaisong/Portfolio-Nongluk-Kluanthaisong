@@ -265,9 +265,9 @@
         </div>
     </header>
 
-    <!-- [หน้า HOME - หน้าแรก]: แนะนำตัว ต้อนรับ ชิดซ้ายพรีเมียม และแสดงรูปภาพโปรไฟล์สะอาดตา -->
+    <!-- [หน้า HOME - หน้าแรก]: แนะนำตัว ต้อนรับ ชิดซ้ายพรีเมียม และแสดงรูปภาพโปรไฟล์สะอาดตา (ปรับให้แคบลงและกระชับขึ้น) -->
     <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-24 min-h-screen flex items-center relative z-10">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                 
                 <!-- ข้อมูลตัวหนังสือต้อนรับ (ฝั่งซ้าย - ชิดซ้ายทั้งหมด และนำประโยคอธิบายออก ปรับระยะกระชับพอเหมาะ) -->
@@ -447,8 +447,18 @@
     </section>
 
     <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ -->
-    <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
+        <!-- [ส่วนประกอบพื้นหลังเฉพาะจุด]: ลูกบอลแสงออร่าจำลองสไตล์หน้าแรกที่มีการเล่นสีสดใสพรีเมียม -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+            <!-- ลูกบอลสีฟ้าสว่าง ไล่เฉดสวยงามเหมือนหน้าแรก -->
+            <div class="glow-orb bg-brand-500/15 w-[450px] h-[450px] -top-20 -left-20 animate-pulse" style="animation-duration: 10s;"></div>
+            <!-- ลูกบอลสีฟ้าอมเขียว (Cyan) วิ่งตัดกันเพื่อเพิ่มการเล่นสี -->
+            <div class="glow-orb bg-cyan-400/15 w-[350px] h-[350px] top-1/4 right-1/4" style="animation-delay: 2s;"></div>
+            <!-- ลูกบอลสีม่วงครามขยับจังหวะนุ่มนวล มุมขวาล่าง -->
+            <div class="glow-orb bg-indigo-400/15 w-[400px] h-[400px] -bottom-20 -right-20 animate-pulse" style="animation-duration: 14s;"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นและตกแต่งด้วย Fancy Effect -->
             <div class="text-center mb-12 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
@@ -639,8 +649,18 @@
     </section>
 
     <!-- [ส่วนใบเซอร์และการอบรม - CERTIFICATIONS & TRAINING]: สไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
-    <section id="certifications" class="py-20 relative z-10 border-t border-slate-100 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="certifications" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
+        <!-- [ส่วนประกอบพื้นหลังเฉพาะจุด]: ลูกบอลแสงออร่าจำลองสไตล์หน้าแรกที่มีการเล่นสีสดใสพรีเมียม -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+            <!-- ลูกบอลสีฟ้าอมเขียวสว่าง เล่นเฉดสีสดใสตัดกับมุมขวาบน -->
+            <div class="glow-orb bg-cyan-400/15 w-[450px] h-[450px] -top-20 -right-20 animate-pulse" style="animation-duration: 12s;"></div>
+            <!-- ลูกบอลสีม่วงครามหรูหรากลางหน้าระเบียงใบเซอร์ -->
+            <div class="glow-orb bg-indigo-400/15 w-[350px] h-[350px] top-1/3 left-1/3" style="animation-delay: 3s;"></div>
+            <!-- ลูกบอลสีฟ้าหลัก เล่นเฉดสีตัดสปอตไลท์ด้านซ้ายล่าง -->
+            <div class="glow-orb bg-brand-500/15 w-[400px] h-[400px] -bottom-20 -left-20 animate-pulse" style="animation-duration: 8s;"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
