@@ -220,11 +220,10 @@
                 NONGLUK<span class="text-brand-600">.K</span>
             </a>
             
-            <!-- เมนูลิงก์นำทางตรงกลาง (แสดงเฉพาะบนแท็บเล็ตและเดสก์ท็อปขึ้นไป) -->
+            <!-- เมนูลิงก์นำทางตรงกลาง (แสดงเฉพาะบนแท็บเล็ตและเดสก์ท็อปขึ้นไป - ไม่มี About Me ตามสั่ง) -->
             <nav id="navMenu" class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-semibold relative">
                 <!-- ลิงก์เมนูแต่ละส่วน พร้อมแท็กสำหรับทำเส้นขีดใต้สีน้ำเงินสว่างขึ้นตามส่วนที่อยู่จริง (Active State) -->
                 <a href="#home" class="nav-item py-2 text-brand-600 transition-all duration-300 relative">Home<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-100 transition-transform duration-300 origin-left"></span></a>
-                <a href="#about" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">About Me<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#education" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Education<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#projects" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Works & Projects<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
                 <a href="#certifications" class="nav-item py-2 text-slate-500 hover:text-brand-600 transition-all duration-300 relative">Certificates<span class="nav-line absolute bottom-0 left-0 right-0 h-[3px] bg-brand-600 scale-x-0 transition-transform duration-300 origin-left"></span></a>
@@ -332,55 +331,7 @@
         </div>
     </section>
 
-    <!-- [ส่วนข้อมูลเกี่ยวกับฉัน - ABOUT ME]: แนะนำประวัติย่อ ความมุ่งมั่น และจุดเด่นส่วนบุคคล -->
-    <section id="about" class="py-16 relative z-10 border-t border-slate-100 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- ส่วนหัวข้อบทความย่อยประจำส่วน -->
-            <div class="text-center mb-10 reveal">
-                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Professional Profile</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
-                <!-- การ์ดประวัติย่อและความสนใจหลัก -->
-                <div class="glass-card p-6 rounded-2xl shadow-sm">
-                    <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-user-tie text-brand-600"></i> My Passion & Interest
-                    </h3>
-                    <p class="text-sm text-slate-600 leading-relaxed font-light">
-                        นักศึกษาชั้นปีที่ 4 คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม สาขาวิชาธุรกิจดิจิทัลและระบบสารสนเทศ มีความหลงใหลในเทคโนโลยีดิจิทัลสมัยใหม่ และมีจุดมุ่งหมายที่จะนำความรู้ด้านการวิเคราะห์ระบบ (System Analysis) และการจัดการฐานข้อมูล (Database & Document Management) มาช่วยเพิ่มประสิทธิภาพและผลลัพธ์ที่จับต้องได้ให้แก่ทีมงานในองค์กร
-                    </p>
-                </div>
-
-                <!-- การ์ด Soft Skills & Languages ดึงมาจาก CV ต้นฉบับ -->
-                <div class="glass-card p-6 rounded-2xl shadow-sm flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-brain text-brand-600"></i> Key Capabilities
-                        </h3>
-                        <!-- รายการ Soft Skills ชัดเจนจากรูปภาพ CV -->
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Analytical Thinking</span>
-                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Communication</span>
-                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Team Collaboration</span>
-                            <span class="bg-brand-50 text-brand-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-brand-100">Attention to Detail</span>
-                        </div>
-                    </div>
-                    <!-- ส่วนข้อมูลภาษา (Languages) -->
-                    <div class="pt-3 border-t border-slate-100">
-                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Languages</h4>
-                        <div class="flex justify-between items-center text-xs">
-                            <span class="font-semibold text-slate-700">Thai (Native)</span>
-                            <span class="text-brand-600 font-bold">English (Intermediate - CEFR B1)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ -->
+    <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ (ถัดจาก Home เสมอ) -->
     <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- ส่วนหัวข้อบทความย่อยประจำส่วน -->
@@ -468,7 +419,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-40 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -494,7 +445,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-40 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=800&auto=format&fit=crop" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -520,7 +471,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-40 bg-slate-100 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=800&auto=format&fit=crop" alt="AR Interactive Museum" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent"></div>
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -724,7 +675,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
                     <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop', 'MSU Open House 2024 Booth Guide')">
                         <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="MSU Open House Activity" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-brand-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Booth Staff & Guide</span>
                         </div>
@@ -748,7 +699,7 @@
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
                     <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop', 'MBS Freshy Day Staff')">
                         <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-indigo-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Event Organizer Staff</span>
                         </div>
@@ -889,6 +840,7 @@
 
     <!-- ==================== [ส่วนคำสั่งคริปต์ควบคุม - JAVASCRIPT ENGINE] ==================== -->
     <script>
+
         // 1. ระบบดักจับการเลื่อนจอค่อยๆ ปรากฏผลงานแอนิเมชัน (Intersection Observer Scroll Animation)
         document.addEventListener("DOMContentLoaded", function() {
             const reveals = document.querySelectorAll(".reveal");
@@ -971,7 +923,7 @@
             }
         });
 
-        // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight)
+        // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight - นำ About out ออก)
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav-item');
 
