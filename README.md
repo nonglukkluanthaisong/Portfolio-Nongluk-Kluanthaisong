@@ -350,11 +350,11 @@
             <div class="reveal glass-card p-4 md:p-6 rounded-2xl mb-8 border-l-4 border-l-brand-600 bg-white shadow-sm">
     <!-- ปรับตัวหนังสือให้เล็กลง: มือถือเล็กลงเป็น text-sm / แท็บเล็ตเป็น text-base / คอมพิวเตอร์เป็น text-lg -->
     <p class="text-sm sm:text-base md:text-lg text-slate-700 font-normal leading-relaxed font-sans text-justify whitespace-pre-line">
-        สวัสดีค่ะ ดิฉันเป็นนักศึกษาชั้นปีที่ 4 สาขาธุรกิจดิจิทัลและระบบสารสนเทศ มหาวิทยาลัยมหาสารคาม ที่มีความตั้งใจจะนำความรู้และเทคโนโลยีใหม่ ๆ มาช่วยพัฒนาธุรกิจ ตลอดระยะเวลาที่เรียนมาได้สั่งสมประสบการณ์ทั้งในด้านการบริหารและระบบสารสนเทศ ทำให้เข้าใจทั้งมุมมองของฝั่งธุรกิจและฝั่งผู้ใช้งานระบบเป็นอย่างดี
+        Hello, I am a fourth-year Digital Business and Information Systems student at Mahasarakham University, driven by a passion for leveraging emerging technologies to transform businesses. Throughout my academic journey, I have built a solid foundation in both business management and information systems, allowing me to effectively bridge the gap between business needs and user experience.
 
-        ส่วนตัวมีความสนใจและชอบทำงานด้านการวิเคราะห์ข้อมูล (Data Analysis) และการวิเคราะห์กระบวนการทางธุรกิจ (Business Process Analysis) รวมถึงระบบการจัดการข้อมูลและเอกสาร (Data & Document Management) โดยมุ่งเน้นเรื่องการนำเครื่องมือดิจิทัลเข้ามาช่วยตัดทอนขั้นตอนที่ยุ่งยาก เพื่อให้การทำงานในองค์กรมีความรวดเร็วและมีประสิทธิภาพมากขึ้น
+        My core interests lie in Data Analysis, Business Process Analysis, and Data & Document Management. I am particularly focused on utilizing digital tools to streamline complex workflows, eliminate inefficiencies, and optimize organizational productivity.
 
-        มีความตั้งใจอย่างยิ่งที่จะเริ่มต้นหาประสบการณ์ฝึกงาน เพื่อซึมซับบรรยากาศการทำงานระดับมืออาชีพ โดยเฉพาะในด้านการบริหารโครงการและการขับเคลื่อนนวัตกรรมดิจิทัลในองค์กร ส่วนตัวเป็นคนที่พร้อมปรับตัวให้ยืดหยุ่น ให้ความสำคัญกับการทำงาน และตื่นเต้นกับการเปิดรับสิ่งใหม่ ๆ เสมอ เพื่อพัฒนาตัวเองจากการทำงานจริง
+        I am highly motivated to secure an internship where I can gain hands-on experience in a professional environment, with a strong focus on project management and digital innovation. As an adaptable and committed individual, I am always excited to embrace new challenges, welcome constructive feedback, and continuously develop my skills through real-world experience.
     </p>
 </div>
             <!-- โครงสร้างกริดแบ่งหมวดหมู่ข้อมูล 3 บล็อกใหญ่: ประวัติย่อ, ซอฟต์แวร์คอมพิวเตอร์, ทักษะหลัก -->
