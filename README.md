@@ -557,9 +557,6 @@
             <!-- กล่องคอนเทนเนอร์สำหรับเลื่อนสไลด์แนวขวาง (เลื่อนด้านข้าง แถบสถานะ Indicator คํานวณตามสไลด์) -->
             <div id="projectScrollContainer" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide">
 
-                <!-- คัดลอกตั้งแต่บรรทัดนี้ไปวางแทนกลุ่มโค้ดเดิมได้เลยครับ -->
-                <!-- กล่องหุ้มภายนอกสุด: บังคับเรียงแนวนอน และเปิดระบบเลื่อนสไลด์ด้านข้าง -->
-                <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-none w-full">
                 <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
@@ -677,6 +674,7 @@
                 </div>
 
             </div>
+            </div> <!-- ปิดกล่องภายนอกสุดอย่างถูกต้อง -->
 
             <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอน (Horizontal Scroll Progress Bar) -->
             <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
