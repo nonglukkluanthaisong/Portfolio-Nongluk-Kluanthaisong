@@ -574,13 +574,14 @@
                                 โครงการสร้างแบบจำลองคาดการณ์ปริมาณการใช้ไฟฟ้า โดยเตรียมข้อมูลดิบ (Data Cleaning) และใช้โมเดลวิเคราะห์แนวโน้ม
                             </p>
                         </div>
-                        <div class="space-y-4">
-                            <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
-                                <p class="text-[10px] text-slate-500 font-medium">
-                                    Cleaned datasets, identified energy patterns.
-                                </p>
-                            </div>
+                        <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
+                            <p class="text-[10px] text-slate-500 font-medium">
+                                Cleaned datasets, identified energy patterns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที (ขนาดการ์ดขยายพิเศษและช่องภาพขยายเป็น h-56) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
