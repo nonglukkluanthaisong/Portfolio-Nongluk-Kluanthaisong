@@ -347,7 +347,7 @@
             </div>
 
             <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
-            <div class="reveal glass-card p-4 md:p-6 rounded-2xl mb-8 border-l-4 border-l-brand-600 bg-white shadow-sm">
+            <div class="reveal glass-card p-2 md:p-2 rounded-2xl mb-2 border-l-4 border-l-brand-600 bg-white shadow-sm">
     <!-- ปรับตัวหนังสือให้เล็กลง: มือถือเล็กลงเป็น text-sm / แท็บเล็ตเป็น text-base / คอมพิวเตอร์เป็น text-lg -->
     <p class="text-sm sm:text-base md:text-lg text-slate-700 font-normal leading-relaxed font-sans text-justify whitespace-pre-line">
         Hello, I am a fourth-year Digital Business and Information Systems student at Mahasarakham University, driven by a passion for leveraging emerging technologies to transform businesses. Throughout my academic journey, I have built a solid foundation in both business management and information systems, allowing me to effectively bridge the gap between business needs and user experience.
