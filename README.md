@@ -44,6 +44,40 @@
 
     <!-- สไตล์ตกแต่งเพิ่มเติมเฉพาะจุด (Custom CSS) -->
     <style>
+        
+        /* บังคับขนาดและน้ำหนักของ "ชื่อตัวละครหลักหน้าแรก" ให้ใหญ่มหึมา ป้องกันปัญหาเบราว์เซอร์แคชบน GitHub */
+        .hero-title {
+            font-size: 3rem !important; /* 48px สำหรับจอเล็ก */
+            font-weight: 900 !important;
+            letter-spacing: -0.025em !important;
+            color: #0f172a !important; /* Slate 900 */
+            line-height: 1.15 !important;
+        }
+        @media (min-width: 640px) {
+            .hero-title {
+                font-size: 4.5rem !important; /* 72px สำหรับจอแท็บเล็ต/คอมพิวเตอร์ */
+            }
+        }
+
+        /* บังคับขนาดและน้ำหนักของ "หัวข้อหลักทุกๆ หน้า" ให้เด่นชัด ตัวใหญ่สะกดสายตาแน่นอน */
+        .section-title {
+            font-size: 2.25rem !important; /* 36px */
+            font-weight: 900 !important;
+            letter-spacing: -0.025em !important;
+            color: #0f172a !important; /* Slate 900 */
+            line-height: 1.2 !important;
+        }
+        @media (min-width: 640px) {
+            .section-title {
+                font-size: 3rem !important; /* 48px */
+            }
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.75rem !important; /* 60px - ขนาดใหญ่โดดเด่นสะดุดตา */
+            }
+        }
+
         /* สไตล์การ์ดกระจกโปร่งแสงหรูหรา (Glassmorphic Cards) สำหรับธีมขาว */
         .glass-card {
             background: rgba(255, 255, 255, 0.78); /* พื้นสีขาวโปร่งแสง 78% */
@@ -221,7 +255,7 @@
                     
                     <!-- ส่วนหัวข้อหลัก: ชื่อเล่นที่มีเอฟเฟกต์สีส่องแสงวิ่งผ่าน และสาขาวิชาเรียนหลักที่มีลูกเล่นขยับได้ -->
                     <div class="space-y-3">
-                        <h1 class="text-5xl sm:text-7xl font-black tracking-tight text-slate-900 leading-tight">
+                        <h1 class="hero-title">
                             <!-- เพิ่มคลาส float-animated-text ให้คำทักทายลอยขึ้นลงเบาๆ -->
                             <span class="float-animated-text">Hi, I'm</span> <span class="shimmer-text">Nongluk</span>
                         </h1>
@@ -304,7 +338,7 @@
             <!-- ส่วนหัวข้อบทความย่อยประจำส่วน -->
             <div class="text-center mb-10 reveal">
                 <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Professional Profile</span>
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-900 mt-2 tracking-tight">About Me</h2>
+                <h2 class="section-title">About Me</h2>
                 <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
@@ -352,7 +386,7 @@
             <!-- ส่วนหัวข้อบทความย่อยประจำส่วน -->
             <div class="text-center mb-12 reveal">
                 <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Academic Timeline</span>
-                <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 mt-2 tracking-tight">Education</h2>
+                <h2 class="section-title">Education</h2>
                 <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
@@ -412,7 +446,7 @@
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Academic Excellence</span>
-                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 mt-2 tracking-tight">Works & Projects</h2>
+                    <h2 class="section-title">Works & Projects</h2>
                     <p class="text-slate-500 mt-2 text-sm">ผลงานและโครงการพัฒนาเว็บไซต์/โมเดลวิเคราะห์ข้อมูลที่ผ่านมา (สไลด์เลื่อนด้านข้าง)</p>
                 </div>
                 
@@ -524,7 +558,7 @@
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Verified Credentials</span>
-                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 mt-1 tracking-tight">Certifications & Training</h2>
+                    <h2 class="section-title">Certifications & Training</h2>
                     <p class="text-slate-500 mt-2 text-sm">ใบรับรองและประกาศนียบัตรวิชาชีพ (เลื่อนดูด้านข้างได้)</p>
                 </div>
                 
@@ -668,7 +702,7 @@
             <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Student Leadership</span>
-                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 mt-2 tracking-tight">Activities</h2>
+                    <h2 class="section-title">Activities</h2>
                     <p class="text-slate-500 mt-2 text-sm">กิจกรรมและงานช่วยเหลือคณะเพื่อสาธารณประโยชน์ที่ได้เข้าร่วม (สไลด์เลื่อนด้านข้าง)</p>
                 </div>
                 
