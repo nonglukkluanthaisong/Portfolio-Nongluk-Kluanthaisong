@@ -836,29 +836,21 @@
         setupSlideButtons('certScrollContainer', 'slideLeftBtn', 'slideRightBtn', 310);
         setupSlideButtons('activityScrollContainer', 'activitySlideLeft', 'activitySlideRight', 370);
 
-        // 4. ระบบแสดง/ซ่อนแถบเมนูนำทางอัจฉริยะ (Smart Header Hide/Show on Scroll)
-        let lastScrollTop = 0;
+        // 4. ระบบปรับลักษณะแถบเมนูนำทางเมื่อมีการเลื่อนหน้าจอ (Header Transition on Scroll - แสดงค้างไว้ตลอดไม่ซ่อน)
         const mainHeader = document.getElementById('mainHeader');
         
         window.addEventListener('scroll', function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             
-            if (scrollTop > lastScrollTop) {
-                // หากกำลังเลื่อนหน้าจอลง (Scroll Down) -> ซ่อนเมนู Navbar ขึ้นไปด้านบนอย่างสมบูรณ์แบบ
-                mainHeader.classList.add('-translate-y-full');
+            if (scrollTop > 20) {
+                // เมื่อเลื่อนหน้าจอลงมา -> ปรับแถบเมนูให้ทึบขึ้นเล็กน้อยพร้อมใส่เงาช่วยให้อ่านง่ายและแยกเลเยอร์ชัดเจน
+                mainHeader.classList.add('bg-white/95', 'shadow-md');
+                mainHeader.classList.remove('bg-white/80');
             } else {
-                // หากเลื่อนจอขึ้นด้านบนด่วน (Scroll Up) -> ดึงเมนู Navbar กลับมาแสดงผลเพื่อใช้งานทันที พร้อมใส่เงา
-                mainHeader.classList.remove('-translate-y-full');
-                mainHeader.classList.add('bg-white/90', 'shadow-md');
-            }
-            
-            // เมื่อเลื่อนขึ้นไปถึงขอบด้านบนสุด ( scrollTop น้อยกว่า 20px ) -> กลับมาแสดงสถานะโปร่งใสเก๋ๆ แบบเดิม
-            if (scrollTop <= 20) {
-                mainHeader.classList.remove('-translate-y-full', 'shadow-md');
+                // เมื่ออยู่บนสุดของหน้าจอ -> คืนค่าความโปร่งแสงตามสไตล์เดิมกระจกฝ้า
+                mainHeader.classList.remove('bg-white/95', 'shadow-md');
                 mainHeader.classList.add('bg-white/80');
             }
-            
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
         });
 
         // 5. ระบบเลื่อนตามตำแหน่งหน้าจอและปรับเส้นใต้เมนูแบบอัตโนมัติ (Scrollspy Active Underline Highlight)
