@@ -133,6 +133,49 @@
         header {
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease, border-color 0.4s ease;
         }
+
+        /* ─── เพิ่มเอฟเฟกต์แอนิเมชันตัวอักษรหน้าปกใหม่ ─── */
+
+        /* 1. แอนิเมชันตัวอักษรลอยขึ้นลงแบบคลื่นอย่างนุ่มนวล (Soft Float Animation) */
+        @keyframes float-text {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .float-animated-text {
+            display: inline-block;
+            animation: float-text 3.5s ease-in-out infinite;
+        }
+
+        /* 2. แอนิเมชันพิมพ์ดีดอัจฉริยะ (Typing Cursor & Writing Effect) */
+        @keyframes typing {
+            0%, 10% { width: 0; }
+            45%, 55% { width: 100%; } /* ค้างช่วงพิมพ์เสร็จไว้ให้อ่านง่าย */
+            90%, 100% { width: 0; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #0066cc; } /* สีของ Cursor ขีดกระพริบ */
+        }
+        .typing-wrapper {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 3px solid #0066cc; /* เส้นเคอร์เซอร์กระพริบด้านขวา */
+            white-space: nowrap;
+            margin: 0;
+            letter-spacing: .05em;
+            animation: 
+                typing 6s steps(30, end) infinite,
+                blink-caret .75s step-end infinite;
+        }
+
+        /* 3. แอนิเมชันเรืองแสงวูบวาบช้าๆ (Pulse Glow Effect) เพื่อเพิ่มมิติความสวยงาม */
+        @keyframes pulse-glow {
+            0%, 100% { text-shadow: 0 0 2px rgba(0, 102, 204, 0.1); }
+            50% { text-shadow: 0 0 12px rgba(0, 102, 204, 0.4); }
+        }
+        .pulse-glow-text {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white overflow-x-hidden">
@@ -187,14 +230,18 @@
                         Available for Internship: 1 Dec 2026 – 31 Mar 2027
                     </span>
                     
-                    <!-- ส่วนหัวข้อหลัก: ชื่อเล่นที่มีเอฟเฟกต์สีส่องแสงวิ่งผ่าน และสาขาวิชาเรียนหลัก -->
+                    <!-- ส่วนหัวข้อหลัก: ชื่อเล่นที่มีเอฟเฟกต์สีส่องแสงวิ่งผ่าน และสาขาวิชาเรียนหลักที่มีลูกเล่นขยับได้ -->
                     <div class="space-y-3">
                         <h1 class="text-5xl sm:text-7xl font-black tracking-tight text-slate-900 leading-tight">
-                            Hi, I'm <span class="shimmer-text">Nongluk</span>
+                            <!-- เพิ่มคลาส float-animated-text ให้คำทักทายลอยขึ้นลงเบาๆ -->
+                            <span class="float-animated-text">Hi, I'm</span> <span class="shimmer-text">Nongluk</span>
                         </h1>
-                        <p class="text-xl sm:text-2xl font-extrabold text-brand-600 tracking-wide font-mono">
-                            Digital Business & Info Systems
-                        </p>
+                        <!-- ปรับแต่ง Wrapper ครอบข้อความตำแหน่งให้แสดงแอนิเมชันพิมพ์ดีดและเรืองแสงอย่างเสถียร -->
+                        <div class="h-10 sm:h-12 flex items-center overflow-hidden">
+                            <p class="text-xl sm:text-2xl font-extrabold text-brand-600 tracking-wide font-mono typing-wrapper pulse-glow-text">
+                                Digital Business & Info Systems
+                            </p>
+                        </div>
                     </div>
                     
                     <!-- ย่อหน้าคำบรรยายเป้าหมายและจุดมุ่งหมายในวิชาชีพ -->
