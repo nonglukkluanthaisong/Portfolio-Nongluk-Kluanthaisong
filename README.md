@@ -672,9 +672,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            </div> <!-- ปิดกล่องภายนอกสุดอย่างถูกต้อง -->
+        </div> <!-- ปิดกล่องภายนอกสุดอย่างถูกต้อง -->
 
             <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอน (Horizontal Scroll Progress Bar) -->
             <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
