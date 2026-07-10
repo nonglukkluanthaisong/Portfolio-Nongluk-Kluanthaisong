@@ -621,7 +621,21 @@
                                 Designed high-fidelity layouts in Figma.
                             </p>
                         </div>
-                        
+                        <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
+                            <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
+                                <!-- เปลี่ยนเป็นแท็ก <a> เพื่อให้กดแล้วเปิดไฟล์รายงานของคุณในแท็บใหม่ทันที (แก้ชื่อไฟล์ให้ตรงกับที่คุณอัปโหลดขึ้นไป) -->
+                                <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    ดูรายงาน
+                                </a>
+                                
+                                <!-- ปรับให้ดึงภาพ Projectr01.webp จากในโฟลเดอร์เวลากดขยายดูรูปภาพเพิ่มเติม -->
+                                <button onclick="openLightbox('images/Projectr01.webp', 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                    <i class="fa-solid fa-images text-brand-600"></i>
+                                    ภาพเพิ่มเติม
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
