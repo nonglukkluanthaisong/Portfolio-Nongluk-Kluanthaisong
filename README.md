@@ -557,130 +557,138 @@
             <!-- กล่องคอนเทนเนอร์สำหรับเลื่อนสไลด์แนวขวาง (เลื่อนด้านข้าง แถบสถานะ Indicator คํานวณตามสไลด์) -->
             <div id="projectScrollContainer" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide">
 
-                <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
-                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-56 bg-slate-100 overflow-hidden">
-                        <img src="images/Projectr01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS</span>
-                                <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Thailand</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                โครงการสร้างแบบจำลองคาดการณ์ปริมาณการใช้ไฟฟ้า โดยเตรียมข้อมูลดิบ (Data Cleaning) และใช้โมเดลวิเคราะห์แนวโน้ม
-                            </p>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
-                                <p class="text-[10px] text-slate-500 font-medium">
-                                    Cleaned datasets, identified energy patterns.
-                                </p>
-                            </div>
-                            <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
-                            <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
-                                <!-- เปลี่ยนเป็นแท็ก <a> เพื่อให้กดแล้วเปิดไฟล์รายงานของคุณในแท็บใหม่ทันที (แก้ชื่อไฟล์ให้ตรงกับที่คุณอัปโหลดขึ้นไป) -->
-                                <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                    ดูรายงาน
-                                </a>
-                                
-                                <!-- ปรับให้ดึงภาพ Projectr01.webp จากในโฟลเดอร์เวลากดขยายดูรูปภาพเพิ่มเติม -->
-                                <button onclick="openLightbox('images/Projectr01.webp', 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
-                                    <i class="fa-solid fa-images text-brand-600"></i>
-                                    ภาพเพิ่มเติม
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที (ขนาดการ์ดขยายพิเศษและช่องภาพขยายเป็น h-56) -->
-                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-56 bg-slate-100 overflow-hidden">
-                        <img src="images/Projectr01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">UI/UX REDESIGN</span>
-                                <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                ปรับปรุง UI/UX บนแอป TrueID ผ่าน User Research และวิเคราะห์พฤทีอกรรม เพื่อสร้าง Interactive Prototype บน Figma
-                            </p>
-                        </div>
-                        <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
-                            <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
-                            <p class="text-[10px] text-slate-500 font-medium">
-                                Designed high-fidelity layouts in Figma.
-                            </p>
-                        </div>
-                        <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
-                            <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
-                                <!-- เปลี่ยนเป็นแท็ก <a> เพื่อให้กดแล้วเปิดไฟล์รายงานของคุณในแท็บใหม่ทันที (แก้ชื่อไฟล์ให้ตรงกับที่คุณอัปโหลดขึ้นไป) -->
-                                <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                    ดูรายงาน
-                                </a>
-                                
-                                <!-- ปรับให้ดึงภาพ Projectr01.webp จากในโฟลเดอร์เวลากดขยายดูรูปภาพเพิ่มเติม -->
-                                <button onclick="openLightbox('images/Projectr01.webp', 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
-                                    <i class="fa-solid fa-images text-brand-600"></i>
-                                    ภาพเพิ่มเติม
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <!-- คัดลอกตั้งแต่บรรทัดนี้ไปวางแทนกลุ่มโค้ดเดิมได้เลยครับ -->
 
-                <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) - ปรับเปลี่ยนรูปแบบเป็นตัวเล่นวิดีโอเดโมขนาดใหญ่ขยายจุใจ h-56 -->
-                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-56 bg-slate-900 overflow-hidden">
-                        <!-- โหลดตัวอย่างวิดีโอจำลองสามมิติมูฟเม้นท์ล้ำยุค เพื่อเป็นตัวแทนของเทคโนโลยี AR -->
-                        <video class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-750" autoplay loop muted playsinline>
-                            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054273b1e2e3dbd0ec0b0213ef2c3c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none"></div>
-                        <!-- ไอคอนลอยสัญลักษณ์ความเคลื่อนไหววิดีโอที่มุมขวาบน -->
-                        <div class="absolute top-3 right-3 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md flex items-center gap-1">
-                            <i class="fa-solid fa-play animate-pulse"></i> VIDEO DEMO
-                        </div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">AUGMENTED REALITY</span>
-                                <span class="text-[10px] text-slate-400 font-mono">Jan 2024</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี ผสานกราฟิกสามมิติเพื่อส่งเสริมการเรียนรู้พิพิธภัณฑ์ยุคใหม่
-                            </p>
-                        </div>
-                        <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
-                            <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
-                            <p class="text-[10px] text-slate-500 font-medium">
-                                Created mockups with 3D model integration.
-                            </p>
-                        </div>
-                    </div>
+<!-- กล่องหุ้มโปรเจกต์ภายนอกสุด: บังคับแถวเดียวนอนยาว และรองรับสไลด์ข้าง -->
+<div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-none w-full">
+
+    <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ -->
+    <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+        <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <img src="images/Projectr01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-2.5">
+                    <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS</span>
+                    <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
                 </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Thailand</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                    โครงการสร้างแบบจำลองคาดการณ์ปริมาณการใช้ไฟฟ้า โดยเตรียมข้อมูลดิบ (Data Cleaning) และใช้โมเดลวิเคราะห์แนวโน้ม
+                </p>
             </div>
-        </div> <!-- ปิดกล่องภายนอกสุดอย่างถูกต้อง -->
-
-            <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอน (Horizontal Scroll Progress Bar) -->
-            <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
-                <div id="projectProgressBar" class="bg-gradient-to-r from-brand-600 to-cyan-500 h-full w-[10%] rounded-full transition-all duration-100"></div>
+            <div class="space-y-4">
+                <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
+                    <p class="text-[10px] text-slate-500 font-medium">
+                        Cleaned datasets, identified energy patterns.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
+                    <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+                        <i class="fa-solid fa-chart-line"></i>
+                        ดูรายงาน
+                    </a>
+                    <button onclick="openLightbox('images/Projectr01.webp', 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-images text-brand-600"></i>
+                        ภาพเพิ่มเติม
+                    </button>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID -->
+    <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+        <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <img src="images/Projectr01.webp" alt="TrueID App Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-2.5">
+                    <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">UI/UX REDESIGN</span>
+                    <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                    ปรับปรุง UI/UX บนแอป TrueID ผ่าน User Research และวิเคราะห์พฤติกรรม เพื่อสร้าง Interactive Prototype บน Figma
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
+                    <p class="text-[10px] text-slate-500 font-medium">
+                        Designed high-fidelity layouts in Figma.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
+                    <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+                        <i class="fa-solid fa-chart-line"></i>
+                        ดูรายงาน
+                    </a>
+                    <button onclick="openLightbox('images/Projectr01.webp', 'TrueID App Redesign - ภาพหน้าจอผลงานการออกแบบ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-images text-brand-600"></i>
+                        ภาพเพิ่มเติม
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
+    <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+            <video class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-750" autoplay loop muted playsinline>
+                <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054273b1e2e3dbd0ec0b0213ef2c3c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none"></div>
+            <div class="absolute top-3 right-3 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md flex items-center gap-1">
+                <i class="fa-solid fa-play animate-pulse"></i> VIDEO DEMO
+            </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-2.5">
+                    <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">AUGMENTED REALITY</span>
+                    <span class="text-[10px] text-slate-400 font-mono">Jan 2024</span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                    การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี ผสานกราฟิกสามมิติเพื่อส่งเสริมการเรียนรู้พิพิธภัณฑ์ยุคใหม่
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
+                    <p class="text-[10px] text-slate-500 font-medium">
+                        Created mockups with 3D model integration.
+                    </p>
+                </div>
+                <!-- เพิ่มกลุ่มปุ่มให้ครบถ้วนและสวยงามสอดคล้องกับโปรเจกต์อื่นๆ -->
+                <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
+                    <a href="#" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+                        <i class="fa-solid fa-chart-line"></i>
+                        ดูรายงาน
+                    </a>
+                    <button onclick="openLightbox('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800', 'AR Learning Media - ภาพผลงานจำลอง')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-images text-brand-600"></i>
+                        ภาพเพิ่มเติม
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- ปิดกล่องภายนอกสุดของโปรเจกต์อย่างถูกต้องตรงนี้ -->
+
+<!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอน (Horizontal Scroll Progress Bar) -->
+<div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
+    <div id="projectProgressBar" class="bg-gradient-to-r from-brand-600 to-cyan-500 h-full w-[10%] rounded-full transition-all duration-100"></div>
+</div>
 
     <!-- [ส่วนใบเซอร์และการอบรม - CERTIFICATIONS & TRAINING]: สไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
     <section id="certifications" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
