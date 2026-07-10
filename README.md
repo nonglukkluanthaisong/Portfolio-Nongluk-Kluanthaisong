@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -244,7 +245,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                 
-                <!-- ข้อมูลตัวหนังสือต้อนรับ (ฝั่งซ้าย - ชิดซ้ายทั้งหมด) -->
+                <!-- ข้อมูลตัวหนังสือต้อนรับ (ฝั่งซ้าย - ชิดซ้ายทั้งหมด และนำประโยคอธิบายออก ปรับระยะกระชับพอเหมาะ) -->
                 <div class="flex-1 text-left space-y-6 md:space-y-8 reveal active">
                     <!-- ป้ายสถานะการพร้อมฝึกงานพร้อมไฟกระพริบ -->
                     <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-bold bg-brand-50 border border-brand-100 text-brand-600 uppercase tracking-wider shadow-sm">
@@ -264,13 +265,8 @@
                             Digital Business & Information Systems
                         </h2>
                     </div>
-                    
-                    <!-- ย่อหน้าคำบรรยายสั้นๆ สไตล์หน้าปกสะดุดตา -->
-                    <p class="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed font-light">
-                        A Digital Business and Information Systems student focused on business analytics, data processes, and smart digital systems.
-                    </p>
 
-                    <!-- ปุ่มดำเนินการอย่างรวดเร็ว (ดูโปรเจกต์ และ ปุ่มดูไฟล์ CV เรซูเม่ออริจินัล) -->
+                    <!-- ปุ่มดำเนินการอย่างรวดเร็ว (ขยับขึ้นมาแทนตำแหน่งข้อความแนะนำตัวแบบกระชับสมดุล) -->
                     <div class="flex flex-wrap justify-start gap-4 pt-2">
                         <!-- ปุ่มเลื่อนลงไปดูผลงาน -->
                         <a href="#projects" class="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all duration-300 shadow-lg shadow-slate-900/15 flex items-center gap-3 transform hover:-translate-y-1">
@@ -313,6 +309,13 @@
                 <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Professional Profile</span>
                 <h2 class="section-title">About Me</h2>
                 <div class="h-1.5 w-16 bg-gradient-to-r from-brand-600 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
+            <div class="reveal glass-card p-6 md:p-8 rounded-2xl mb-10 border-l-4 border-l-brand-600 bg-white shadow-sm">
+                <p class="text-base sm:text-lg md:text-xl text-slate-700 font-medium leading-relaxed font-sans">
+                    A Digital Business and Information Systems student focused on business analytics, data processes, and smart digital systems.
+                </p>
             </div>
 
             <!-- โครงสร้างกริดแบ่งหมวดหมู่ข้อมูล 3 บล็อกใหญ่: ประวัติย่อ, ซอฟต์แวร์คอมพิวเตอร์, ทักษะหลัก -->
@@ -544,11 +547,19 @@
                     </div>
                 </div>
 
-                <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
+                <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) - ปรับเปลี่ยนรูปแบบเป็นตัวเล่นวิดีโอ (Video Player Container) -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[350px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-40 bg-slate-100 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=800&auto=format&fit=crop" alt="AR Interactive Museum" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent"></div>
+                    <div class="relative h-40 bg-slate-900 overflow-hidden">
+                        <!-- โหลดตัวอย่างวิดีโอ Abstract HUD/Digital Visualization มูฟเม้นท์สวยหรูจาก Pexels เป็นตัวแทนของความล้ำลึกแบบ AR -->
+                        <video class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-750" autoplay loop muted playsinline>
+                            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054273b1e2e3dbd0ec0b0213ef2c3c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-955/60 to-transparent pointer-events-none"></div>
+                        <!-- ไอคอนลอยสัญลักษณ์ความเคลื่อนไหววิดีโอที่มุมขวาบน -->
+                        <div class="absolute top-3 right-3 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md flex items-center gap-1">
+                            <i class="fa-solid fa-play animate-pulse"></i> VIDEO DEMO
+                        </div>
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
