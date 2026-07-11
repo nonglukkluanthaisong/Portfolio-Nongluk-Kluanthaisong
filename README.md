@@ -566,7 +566,7 @@
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Demand Forecasting</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                            โปรเจกต์พยากรณ์ไฟฟ้าในไทย นำข้อมูลจริงรายชั่วโมง 8,806 รายการ จาก Zenodo (2025) มาทำ Data Cleaning 9 ปัจจัย และประมวลผลด้วย Machine Learning บน Altair AI Studio พบว่า Random Forest แม่นยำที่สุดด้วย R² 96.70% ($RMSE = 514.03$) โดยมีปัจจัยหลักคือ ฤดูกาล ช่วงเวลา และกำลังผลิตภาคกลาง/มหานคร ซึ่งนำไปต่อยอดวางแผนการจ่ายไฟระดับประเทศได้จริง
+                            โปรเจกต์พยากรณ์ไฟฟ้าในไทย นำข้อมูลจริงรายชั่วโมง 8,806 รายการ จาก Zenodo (2025) มาทำ Data Cleaning 9 ปัจจัย และประมวลผลด้วย Machine Learning บน Altair AI Studio พบว่า Random Forest แม่นยำที่สุดด้วย R² 96.70% (RMSE = 514.03) 
                             </p>
                         </div>
                         <div class="space-y-4">
@@ -582,7 +582,7 @@
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </a>
-                            <button onclick="openLightbox(['images/Projects01.webp', 'images/Projects01.1.webp'], 'ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                            <button onclick="openLightbox(['images/Projects01.webp', 'images/Projects01.1.webp'], 'Electricity Demand Forecasting - ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                 <i class="fa-solid fa-images text-brand-600"></i>
                                 ภาพเพิ่มเติม
                             </button>
