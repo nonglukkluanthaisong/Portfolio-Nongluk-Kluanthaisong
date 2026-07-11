@@ -879,7 +879,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <span>DEC 2024</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">MSU Open House 2024</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
+                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-left">
                             สนับสนุนกิจกรรมบูธ Open House โดยการแนะนำ/ประชาสัมพันธ์ห ลักสูตรธุรกิจดิจิทัลและระบบสารสนเทศ คอยให้คำแนะนำ/นำทางผู้เข้าร่วมงาน และช่วยเหลือนักเรียน/ผู้เรียนระหว่างทำกิจกรรมที่บูธ
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
