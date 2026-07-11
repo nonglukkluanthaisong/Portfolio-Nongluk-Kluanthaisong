@@ -1,4 +1,3 @@
-<img width="960" height="478" alt="image" src="https://github.com/user-attachments/assets/33bf5a5c-c9c3-4f73-b673-c79bc2ac7b90" /><!DOCTYPE html>
 <html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -565,9 +564,9 @@
                                 <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS & MACHINE LEARNING</span>
                                 <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Demand Forecasting in Thailand</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Demand Forecasting</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                โปรเจกต์พยากรณ์ความต้องการใช้ไฟฟ้าในไทย โดยนำข้อมูลจริงรายชั่วโมงจำนวน 8,806 รายการ จาก Zenodo (2025) มาผ่านกระบวนการ Data Cleaning และคัดเลือก 9 ปัจจัยสำคัญ ก่อนประมวลผลด้วย Machine Learning บน Altair AI Studio (RapidMiner) ซึ่งพบว่า Random Forest ให้ผลลัพธ์แม่นยำที่สุดด้วยค่า $R^2$ สูงถึง 96.70% ($RMSE = 514.03$) โดยมีปัจจัยหลักคือ ฤดูกาล, ช่วงเวลา และกำลังการผลิตในภาคกลาง/มหานคร ผลลัพธ์นี้สามารถนำไปต่อยอดวางแผนการจ่ายไฟและบริหารพลังงานระดับประเทศได้อย่างมีประสิทธิภาพ
+                            โปรเจกต์พยากรณ์ไฟฟ้าในไทย นำข้อมูลจริงรายชั่วโมง 8,806 รายการ จาก Zenodo (2025) มาทำ Data Cleaning 9 ปัจจัย และประมวลผลด้วย Machine Learning บน Altair AI Studio พบว่า Random Forest แม่นยำที่สุดด้วย $R^2$ 96.70% ($RMSE = 514.03$) โดยมีปัจจัยหลักคือ ฤดูกาล ช่วงเวลา และกำลังผลิตภาคกลาง/มหานคร ซึ่งนำไปต่อยอดวางแผนการจ่ายไฟระดับประเทศได้จริง
                             </p>
                         </div>
                         <div class="space-y-4">
@@ -583,13 +582,10 @@
     <i class="fa-solid fa-chart-line"></i>
     ดูรายงาน
 </a>
-                                    <i class="fa-solid fa-chart-line"></i>
-                                    ดูรายงาน
-                                </button>
-                                <button onclick="openLightbox(['images/Projectr01.webp', 'images/Projectr01.1.webp'], 'ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
-                                    <i class="fa-solid fa-images text-brand-600"></i>
-                                    ภาพเพิ่มเติม
-                                </button>
+<button onclick="openLightbox(['images/Projectr01.webp', 'images/Projectr01.1.webp'], 'ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+    <i class="fa-solid fa-images text-brand-600"></i>
+    ภาพเพิ่มเติม
+</button>
                             </div>
                         </div>
                     </div>
