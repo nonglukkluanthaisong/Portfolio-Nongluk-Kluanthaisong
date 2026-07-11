@@ -847,7 +847,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <h2 class="fancy-header">Activities</h2>
                         </div>
                     </div>
-                    <p class="text-slate-500 mt-2 text-sm">กิจกรรมและงานช่วยเหลือคณะเพื่อสาธารณประโยชน์ที่ได้เข้าร่วม (สามารถเลื่อนชมผลงานได้ที่นี่)</p>
+                    <p class="text-slate-500 mt-2 text-sm">รวมกิจกรรมที่ได้เข้าร่วม พร้อมทั้งงานช่วยเหลือคณะและสาธารณประโยชน์ (สามารถสไลด์เพื่อดูรายละเอียดเพิ่มเติม)</p>
                 </div>
                 
                 <!-- ปุ่มสไลด์ควบคุมทิศทาง ซ้าย-ขวา -->
@@ -866,8 +866,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                 
                 <!-- กิจกรรมย่อย 1 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
-                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop', 'MSU Open House 2024 Booth Guide')">
-                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="MSU Open House Activity" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac1.1.webp', 'MSU Open House 2024 - ผู้ดูแลกิจกรรมและต้อนรับประจำบูธ')">
+                        <img src="images/Ac1.webp" alt="MSU Open House Activity" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-brand-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Booth Staff & Guide</span>
@@ -879,8 +879,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <span>DEC 2024</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">MSU Open House 2024</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mb-3">
-                            ร่วมทำกิจกรรมแนะนำหลักสูตรดิจิทัลธุรกิจ แนะนำแนะแนวการศึกษาต่อให้กับกลุ่มน้องๆ นักเรียนมัธยมปลาย
+                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
+                            สนับสนุนกิจกรรมบูธ Open House โดยการแนะนำ/ประชาสัมพันธ์ห ลักสูตรธุรกิจดิจิทัลและระบบสารสนเทศ คอยให้คำแนะนำ/นำทางผู้เข้าร่วมงาน และช่วยเหลือนักเรียน/ผู้เรียนระหว่างทำกิจกรรมที่บูธ
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
                             <i class="fa-solid fa-users text-brand-600"></i> Supported Open House activities.
