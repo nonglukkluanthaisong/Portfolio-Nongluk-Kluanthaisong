@@ -347,7 +347,7 @@
 
             <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
             <div class="reveal glass-card p-6 md:p-8 rounded-2xl mb-6 border-l-4 border-l-brand-600 bg-white shadow-sm">
-                <p class="text-xs sm:text-sm md:text-base text-slate-700 font-normal leading-relaxed font-sans">
+                <p class="text-xs sm:text-sm md:text-base text-slate-700 font-normal leading-relaxed font-sans indent-6 text-justify">
                     Hello, I am a fourth-year Digital Business and Information Systems student at Mahasarakham University, driven by a passion for leveraging emerging technologies to transform businesses. Throughout my academic journey, I have built a solid foundation in both business management and information systems, allowing me to effectively bridge the gap between business needs and user experience.
 
 My core interests lie in Data Analysis, Business Process Analysis, and Data & Document Management. I am particularly focused on utilizing digital tools to streamline complex workflows, eliminate inefficiencies, and optimize organizational productivity.
