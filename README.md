@@ -535,7 +535,7 @@
                             <h2 class="fancy-header">Works & Projects</h2>
                         </div>
                     </div>
-                    <p class="text-slate-500 mt-2 text-sm">ผลงานและโครงการพัฒนาเว็บไซต์/โมเดลวิเคราะห์ข้อมูลที่ผ่านมา (สไลด์เลื่อนด้านข้าง)</p>
+                    <p class="text-slate-500 mt-2 text-sm">รวบรวมโครงการพัฒนาเว็บไซต์และโมเดลวิเคราะห์ข้อมูลจากการศึกษาและโปรเจกต์ในคณะ สามารถเลือกชมผลงานทั้งหมดได้ที่นี่</p>
                 </div>
                 
                 <!-- ปุ่มสไลด์ควบคุมทิศทาง ซ้าย-ขวา -->
@@ -555,7 +555,7 @@
                 <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
-                        <img src="images/Projectr01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <img src="images/Projects01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
