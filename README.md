@@ -914,6 +914,33 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                 
             </div>
 
+            <!-- กิจกรรมย่อย 3 -->
+                <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac2.png', 'MBS Freshy Day Staff-ช่วยจัดเตรียมสถานที่ประสานงานผู้เข้าร่วมงาน / ดูแลอำนวยความสะดวก')">
+                        <img src="images/Ac2.png" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-3 left-4">
+                            <span class="bg-indigo-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Event Organizer Staff</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between text-[10px] font-bold text-slate-400 mb-1 font-mono">
+                            <span>MBS FACULTY EVENTS</span>
+                            <span>JUL 2025</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">MBS Fresh Day & Fresh Night</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
+                            สนับสนุนการดำเนินงานในส่วนสตาฟหน้างาน โดยร่วมจัดเตรียมสถานที่ให้มีความพร้อม ปฏิบัติหน้าที่ประสานงานและดูแลต้อนรับผู้เข้าร่วมงานตลอดจนช่วยควบคุมดูแลความเรียบร้อยโดยรวมภายในงาน 
+                        </p>
+                        <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
+                            <i class="fa-solid fa-handshake text-indigo-500"></i> Assisted with registration.
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
             <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอนของกิจกรรม -->
             <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
                 <div id="activityProgressBar" class="bg-gradient-to-r from-brand-600 to-cyan-500 h-full w-[10%] rounded-full transition-all duration-100"></div>
