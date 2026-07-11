@@ -912,7 +912,31 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                     </div>
                 </div>
 
-            <!-- กิจกรรมย่อย 3 -->
+                <!-- กิจกรรมย่อย 3 -->
+                <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac2.png', 'EduTech Seminar - บรรยากาศการเข้าร่วมฟังเสวนา รับฟังแนวคิดและมุมมองใหม่ด้าน AI และ Cybersecurity">
+                        <img src="images/Ac2.png" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-3 left-4">
+                            <span class="bg-indigo-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">EduTech Seminar</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between text-[10px] font-bold text-slate-400 mb-1 font-mono">
+                            <span>ACADEMIC SEMINAR</span>
+                            <span>Oct 2025</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">EduTech for Thailand's Future</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
+                            เข้าร่วมฟังเสวนาในหัวข้อ EduTech for Thailand's Future เพื่ออัปเดตแนวคิดการเรียนรู้ยุคใหม่ด้วย Cybersecurity และ AI เรียนรู้การนำเทคโนโลยีและปัญญาประดิษฐ์มาประยุกต์ใช้ในการศึกษาอย่างปลอดภัย
+                        </p>
+                        <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
+                            <i class="fa-solid fa-users text-brand-600"></i> Supported Open House activities.
+                        </div>
+                    </div>
+                </div>
+
+            <!-- กิจกรรมย่อย 4 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
                     <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac3.webp', 'MBS Samphao Fah Games 2024 - ดูแลจัดเตรียมสถานที่ ฝึกซ้อมสแตนเชียร์ และเป็นผู้ถือพร็อพประกอบการแสดง')">
                         <img src="images/Ac3.webp" alt="MBS Samphao Fah Games 2024" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
