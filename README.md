@@ -718,7 +718,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                 
                 <!-- ใบประกาศนียบัตร 1 -->
                 <div class="snap-start shrink-0 w-[280px] sm:w-[320px] glass-card rounded-2xl overflow-hidden flex flex-col group bg-slate-50/50">
-                    <div class="relative aspect-[1.414/1] bg-slate-100 overflow-hidden cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=800&auto=format&fit=crop', 'MSU English Exit Examination (CEFR B1)')">
+                    <div class="relative aspect-[1.414/1] bg-slate-100 overflow-hidden cursor-pointer" onclick="openLightbox('images/Cer1.png', 'MSU English Exit Examination (CEFR B1)')">
                         <img src="images/Cer1.png" alt="MSU English Exit Exam Certificate" class="w-full h-full object-cover opacity-90 group-hover:scale-102 transition-transform duration-500">
                         <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="bg-brand-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-md">
