@@ -667,7 +667,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             </div>
                             <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
                             <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
-                                <button onclick="openReport('AR Learning Media')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5">
+                                <a href="images/TrueID.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
                                     <i class="fa-solid fa-book-open"></i>
                                     ดูรายงาน
                                 </button>
