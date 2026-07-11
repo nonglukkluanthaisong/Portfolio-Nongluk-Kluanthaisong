@@ -914,7 +914,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
 
                 <!-- กิจกรรมย่อย 3 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
-                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac4.1.png','EduTech Seminar - บรรยากาศการเข้าร่วมฟังเสวนา รับฟังแนวคิดและมุมมองใหม่ด้าน AI และ Cybersecurity">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac4.1.png','EduTech Seminar - บรรยากาศการเข้าร่วมฟังเสวนา รับฟังแนวคิดและมุมมองใหม่ด้าน AI และ Cybersecurity')">
                         <img src="images/Ac4.webp" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
