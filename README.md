@@ -636,7 +636,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                 <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
-                        <img src="images/B.png" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <img src="images/cc.webp" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -647,7 +647,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
-                                การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี รับผิดชอบการออกแบบสื่อการเรียนรู้ AR เชิงโต้ตอบ (Interactive AR) โดยจำลองการพัฒนาสื่อสำหรับโซนนิทรรศการจัดแสดงสายพันธุ์ไดโนเสาร์ในพิพิธภัณฑ์ เพื่อเปลี่ยนป้ายข้อมูลประวัติศาสตร์แบบเดิมให้กลายเป็นประสบการณ์ที่ผู้เข้าชมสัมผัสได้จริง ช่วยดึงดูดสายตา กระตุ้นการมีส่วนร่วมในพื้นที่จัดแสดง (On-site Engagement) และยกระดับการเรียนรู้ผ่านนิทรรศการให้มีความสนุก มีชีวิตชีวา และน่าจดจำยิ่งขึ้น
+                            รับผิดชอบการออกแบบสื่อการเรียนรู้ AR เชิงโต้ตอบ โดยจำลองการพัฒนาสื่อสำหรับโซนนิทรรศการจัดแสดงสายพันธุ์ไดโนเสาร์ในพิพิธภัณฑ์ เพื่อเปลี่ยนป้ายข้อมูลประวัติศาสตร์แบบเดิมให้กลายเป็นประสบการณ์ที่ผู้เข้าชมสัมผัสได้จริง ช่วยดึงดูดสายตา กระตุ้นการมีส่วนร่วมในพื้นที่จัดแสดง และยกระดับการเรียนรู้ผ่านนิทรรศการให้มีความสนุก มีชีวิตชีวา และน่าจดจำยิ่งขึ้น
                             </p>
                         </div>
                         <div class="space-y-4">
