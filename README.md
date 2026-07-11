@@ -1,4 +1,3 @@
-<img width="605" height="423" alt="image" src="https://github.com/user-attachments/assets/0a78622d-15a0-4c38-a7a8-5f76a19d99ac" /><html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
