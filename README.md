@@ -890,7 +890,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
 
                 <!-- กิจกรรมย่อย 2 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
-                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac2.png', 'MBS Freshy Day Staff-ช่วยจัดเตรียมสถานที่ประสานงานผู้เข้าร่วมงาน / ดูแลอำนวยความสะดวก')">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac2.png', 'MBS Freshy Day Staff - ช่วยจัดเตรียมสถานที่ประสานงานผู้เข้าร่วมงาน / ดูแลอำนวยความสะดวก')">
                         <img src="images/Ac2.png" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
@@ -914,8 +914,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
 
             <!-- กิจกรรมย่อย 3 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
-                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('imagesAc3.webp', 'MBS Samphao Fah Games 2024-ดูแลจัดเตรียมสถานที่ ฝึกซ้อมสแตนเชียร์ และเป็นผู้ถือพร็อพประกอบการแสดง')">
-                        <img src="images/Ac3.1.webp" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac3.webp', 'MBS Samphao Fah Games 2024 - ดูแลจัดเตรียมสถานที่ ฝึกซ้อมสแตนเชียร์ และเป็นผู้ถือพร็อพประกอบการแสดง')">
+                        <img src="images/Ac3.webp" alt="MBS Samphao Fah Games 2024" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-indigo-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Stand Cheer & Venue Staff</span>
@@ -928,7 +928,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                         </div>
                         <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">MBS Samphao Fah Games 2024</h3>
                         <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
-                            สนับสนุนการจัดงานกีฬาสำเภาฟ้าเกมส์ 2024 โดยรับหน้าที่จัดเตรียมสถานที่ คอยดูแลและร่วมฝึกซ้อมการแสดงสแตนด์เชียร์ประจำสี พร้อมทั้งเข้า ร่วมเป็นหนึ่งในแสดงโชว์โดยรับหน้าที่ถือพร็อพประกอบการแสดง เพื่อเตรียมความพร้อมและสร้างความสามัคคีให้แก่นิสิตที่เข้าร่วมกิจกรรม
+                            สนับสนุนการจัดงานกีฬาสำเภาฟ้าเกมส์ 2024 โดยรับหน้าที่จัดเตรียมสถานที่ คอยดูแลและร่วมฝึกซ้อมการแสดงสแตนด์เชียร์ประจำสี และร่วมเป็นหนึ่งในแสดงโชว์โดยรับหน้าที่ถือพร็อพประกอบการแสดง 
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
                             <i class="fa-solid fa-handshake text-indigo-500"></i> Assisted with registration.
