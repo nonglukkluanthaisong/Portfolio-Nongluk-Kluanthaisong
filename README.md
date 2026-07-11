@@ -624,7 +624,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </a>
-                            <button onclick="openLightbox('images/โคนม1.1.png', 'The Milk Production Process - บรรยากาศการนำเสนอโปรเจกต์พยากรณ์การใช้ไฟฟ้าในประเทศไทย')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                            <button onclick="openLightbox('images/โคนม1.1.png', 'The Milk Production Process - ภาพบรรยากาศการลงพื้นที่ศึกษาดูงานและการเตรียมความพร้อมก่อนเข้าชมพื้นที่ผลิตนม')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>   
                                     ภาพเพิ่มเติม
                             </button>
