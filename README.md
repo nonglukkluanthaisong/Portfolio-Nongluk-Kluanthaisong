@@ -266,7 +266,7 @@
     </header>
 
     <!-- [หน้า HOME - หน้าแรก]: แนะนำตัว ต้อนรับ ชิดซ้ายพรีเมียม และแสดงรูปภาพโปรไฟล์สะอาดตา (ปรับให้แคบลงและกระชับขึ้น) -->
-    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-24 min-h-screen flex items-center relative z-10">
+    <section id="home" class="pt-24 pb-12 md:pt-32 md:pb-16 min-h-screen flex items-center relative z-10">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                 
@@ -311,7 +311,7 @@
                     <div class="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-200 border-4 border-white bg-white group">
                         <!-- กล่องรูปภาพสำหรับควบคุมการซูมขยายเบาๆ เมื่อนำเมาส์มาวางชี้ -->
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img src="images/ภาพ.jpg" alt="Nongluk Kluanthaisong Portrait" class="w-full h-full object-cover transition-transform duration-750 group-hover:scale-105" onerror="this.onerror=null; this.src='images/Projectr01.webp';">
+                            <img src="Nongluk.cv.jpg" alt="Nongluk Kluanthaisong Portrait" class="w-full h-full object-cover transition-transform duration-750 group-hover:scale-105" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop';">
                         </div>
                         
                         <!-- ป้ายข้อความลอยเก๋ๆ มุมซ้ายล่างบ่งบอกการพร้อมรับการฝึกงาน -->
@@ -327,10 +327,10 @@
     </section>
 
     <!-- [ส่วนข้อมูลทั่วไปเกี่ยวกับฉัน - ABOUT ME]: แสดงก่อนประวัติการศึกษา มีประวัติย่อ ทักษะและเทคโนโลยีซอฟต์แวร์ที่ใช้ -->
-    <section id="about" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
+    <section id="about" class="py-12 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- ส่วนหัวข้อใหญ่ประจำหน้า About Me (ตกแต่งพิเศษมีออร่าด้านหลัง) -->
-            <div class="text-center mb-12 reveal">
+            <div class="text-center mb-6 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
                     <i class="fa-solid fa-user-tie animate-bounce"></i>
                     <span class="text-xs font-bold uppercase tracking-widest font-mono">Professional Profile</span>
@@ -347,16 +347,12 @@
             </div>
 
             <!-- ข้อความแนะนำตัวเด่นย้ายมาจากหน้าแรก จัดสไตล์ Quote Card สวยสะดุดตาก่อนหัวข้อย่อยด้านล่าง -->
-            <div class="reveal glass-card p-2 md:p-2 rounded-2xl mb-2 border-l-4 border-l-brand-600 bg-white shadow-sm">
-    <!-- ปรับตัวหนังสือให้เล็กลง: มือถือเล็กลงเป็น text-sm / แท็บเล็ตเป็น text-base / คอมพิวเตอร์เป็น text-lg -->
-    <p class="text-sm sm:text-base md:text-lg text-slate-700 font-normal leading-relaxed font-sans text-justify whitespace-pre-line">
-        Hello, I am a fourth-year Digital Business and Information Systems student at Mahasarakham University, driven by a passion for leveraging emerging technologies to transform businesses. Throughout my academic journey, I have built a solid foundation in both business management and information systems, allowing me to effectively bridge the gap between business needs and user experience.
+            <div class="reveal glass-card p-6 md:p-8 rounded-2xl mb-6 border-l-4 border-l-brand-600 bg-white shadow-sm">
+                <p class="text-base sm:text-lg md:text-xl text-slate-700 font-medium leading-relaxed font-sans">
+                    A Digital Business and Information Systems student focused on business analytics, data processes, and smart digital systems.
+                </p>
+            </div>
 
-        My core interests lie in Data Analysis, Business Process Analysis, and Data & Document Management. I am particularly focused on utilizing digital tools to streamline complex workflows, eliminate inefficiencies, and optimize organizational productivity.
-
-        I am highly motivated to secure an internship where I can gain hands-on experience in a professional environment, with a strong focus on project management and digital innovation. As an adaptable and committed individual, I am always excited to embrace new challenges, welcome constructive feedback, and continuously develop my skills through real-world experience.
-    </p>
-</div>
             <!-- โครงสร้างกริดแบ่งหมวดหมู่ข้อมูล 3 บล็อกใหญ่: ประวัติย่อ, ซอฟต์แวร์คอมพิวเตอร์, ทักษะหลัก -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
@@ -451,7 +447,7 @@
     </section>
 
     <!-- [ส่วนข้อมูลการศึกษา - EDUCATION]: สรุปประวัติ มหาวิทยาลัย, คณะ, สาขา, เกรดเฉลี่ยอย่างเป็นทางการ -->
-    <section id="education" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
+    <section id="education" class="py-12 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
         <!-- [ส่วนประกอบพื้นหลังเฉพาะจุด]: ลูกบอลแสงออร่าจำลองสไตล์หน้าแรกที่มีการเล่นสีสดใสพรีเมียม -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
             <!-- ลูกบอลสีฟ้าสว่าง ไล่เฉดสวยงามเหมือนหน้าแรก -->
@@ -464,7 +460,7 @@
 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายความเด่นและตกแต่งด้วย Fancy Effect -->
-            <div class="text-center mb-12 reveal">
+            <div class="text-center mb-6 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 mb-3 shadow-sm transform hover:scale-105 transition-all duration-300 cursor-default">
                     <i class="fa-solid fa-graduation-cap animate-bounce"></i>
                     <span class="text-xs font-bold uppercase tracking-widest font-mono">Academic Timeline</span>
@@ -529,10 +525,10 @@
     </section>
 
     <!-- [ส่วนผลงานและโครงการพัฒนา - WORKS & PROJECTS]: แสดงการ์ดผลงานโปรเจกต์ 3 ชิ้นพร้อมสไลด์แนวนอน ขยายขนาดช่องภาพ/วิดีโอให้เต็มตา -->
-    <section id="projects" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
+    <section id="projects" class="py-12 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- ส่วนหัวข้อบทความย่อยประจำส่วน - ขยายให้เน้นหัวข้อเด่นชัดสุดๆ ด้วย Fancy Effect -->
-            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-6 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Academic Excellence</span>
                     <div class="block mt-1">
@@ -540,7 +536,7 @@
                             <h2 class="fancy-header">Works & Projects</h2>
                         </div>
                     </div>
-                    <p class="text-slate-500 mt-2 text-sm">รวบรวมโครงการพัฒนาเว็บไซต์และโมเดลวิเคราะห์ข้อมูลจากการศึกษาและโปรเจกต์ในคณะ สามารถเลือกชมผลงานทั้งหมดได้ที่นี่</p>
+                    <p class="text-slate-500 mt-2 text-sm">ผลงานและโครงการพัฒนาเว็บไซต์/โมเดลวิเคราะห์ข้อมูลที่ผ่านมา (สไลด์เลื่อนด้านข้าง)</p>
                 </div>
                 
                 <!-- ปุ่มสไลด์ควบคุมทิศทาง ซ้าย-ขวา -->
@@ -556,11 +552,11 @@
 
             <!-- กล่องคอนเทนเนอร์สำหรับเลื่อนสไลด์แนวขวาง (เลื่อนด้านข้าง แถบสถานะ Indicator คํานวณตามสไลด์) -->
             <div id="projectScrollContainer" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide">
-
-              <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
+                
+                <!-- โครงการที่ 1: วิเคราะห์และคาดการณ์กระแสไฟฟ้าระดับชาติ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <img src="images/Projectr01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -583,11 +579,14 @@
                             </div>
                             <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
                             <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
-                                <button onclick="openReport('Electricity Thailand')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5">
+                                <a href="images/ชื่อไฟล์รายงานของคุณ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+    <i class="fa-solid fa-chart-line"></i>
+    ดูรายงาน
+</a>
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </button>
-                                <button onclick="openLightbox('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop', 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                <button onclick="openLightbox(['images/Projectr01.webp', 'images/Projectr02.webp'], 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                     ภาพเพิ่มเติม
                                 </button>
@@ -692,7 +691,7 @@
     </section>
 
     <!-- [ส่วนใบเซอร์และการอบรม - CERTIFICATIONS & TRAINING]: สไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
-    <section id="certifications" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
+    <section id="certifications" class="py-12 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
         <!-- [ส่วนประกอบพื้นหลังเฉพาะจุด]: ลูกบอลแสงออร่าจำลองสไตล์หน้าแรกที่มีการเล่นสีสดใสพรีเมียม -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
             <!-- ลูกบอลสีฟ้าอมเขียวสว่าง เล่นเฉดสีสดใสตัดกับมุมขวาบน -->
@@ -705,7 +704,7 @@
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-6 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Verified Credentials</span>
                     <div class="block mt-1">
@@ -850,10 +849,10 @@
     </section>
 
     <!-- [ส่วนงานกิจกรรมช่วยเหลือมหาวิทยาลัย - ACTIVITIES]: สไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
-    <section id="activities" class="py-20 relative z-10 border-t border-slate-100 bg-slate-50">
+    <section id="activities" class="py-12 relative z-10 border-t border-slate-100 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- หัวข้อหลักประจำหน้ากิจกรรม - ตกแต่งด้วยเอฟเฟกต์ Fancy -->
-            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-6 gap-4">
                 <div class="reveal">
                     <span class="text-xs font-bold text-brand-600 uppercase tracking-widest font-mono">Student Leadership</span>
                     <div class="block mt-1">
@@ -936,9 +935,9 @@
     </section>
 
     <!-- [ส่วนช่องทางติดต่อและท้ายสุด - CONTACT & FOOTER] -->
-    <footer id="contact" class="bg-white text-slate-700 py-16 border-t border-slate-200/80 relative z-10">
+    <footer id="contact" class="bg-white text-slate-700 py-12 border-t border-slate-200/80 relative z-10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pb-12 border-b border-slate-100 reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pb-8 border-b border-slate-100 reveal">
                 
                 <!-- ข้อมูลติดต่อด่วนดั้งเดิม (ฝั่งซ้าย) -->
                 <div class="space-y-5">
@@ -1189,6 +1188,27 @@
         function closeLightbox() {
             document.getElementById('lightboxModal').classList.add('hidden'); // ซ่อนป๊อปอัพลงไป
             document.body.classList.remove('overflow-hidden');
+        }
+
+        // 7.5 ฟังก์ชันเปิดและจำลองไฟล์รายงานโครงการหลัก
+        function openReport(projectName) {
+            showToast(`กำลังโหลดรายงานและวิเคราะห์ข้อมูลโครงการ: ${projectName}...`);
+            // โหลดจำลองหน่วงเวลาก่อนเปิดแสดงหน้าเอกสารรายงานแบบพรีเมียม
+            setTimeout(() => {
+                let mockReportImg = "";
+                let title = "";
+                if (projectName.includes("Electricity")) {
+                    mockReportImg = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop";
+                    title = "Electricity Thailand - รายงานการคาดการณ์พลังงานระดับชาติ";
+                } else if (projectName.includes("TrueID")) {
+                    mockReportImg = "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=800&auto=format&fit=crop";
+                    title = "TrueID App Redesign - เอกสารวิจัยพฤติกรรมและการวิเคราะห์ UI/UX";
+                } else {
+                    mockReportImg = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop";
+                    title = "AR Learning Media - แผนแม่บทพัฒนาโมเดล AR 3D เสมือนจริง";
+                }
+                openLightbox(mockReportImg, `${title} (ตัวอย่างภาพสรุปสาระสำคัญรายงานโครงการ)`);
+            }, 800);
         }
 
         // 8. ระบบคัดลอกเบอร์โทรศัพท์และอีเมลอย่างรวดเร็ว (Copy To Clipboard with Safe Fallback)
