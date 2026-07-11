@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<img width="960" height="478" alt="image" src="https://github.com/user-attachments/assets/33bf5a5c-c9c3-4f73-b673-c79bc2ac7b90" /><!DOCTYPE html>
 <html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -562,31 +562,31 @@
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS</span>
+                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">DATA ANALYTICS & MACHINE LEARNING</span>
                                 <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Thailand</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Demand Forecasting in Thailand</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                โครงการสร้างแบบจำลองคาดการณ์ปริมาณการใช้ไฟฟ้า โดยเตรียมข้อมูลดิบ (Data Cleaning) และใช้โมเดลวิเคราะห์แนวโน้ม
+                                โปรเจกต์พยากรณ์ความต้องการใช้ไฟฟ้าในไทย โดยนำข้อมูลจริงรายชั่วโมงจำนวน 8,806 รายการ จาก Zenodo (2025) มาผ่านกระบวนการ Data Cleaning และคัดเลือก 9 ปัจจัยสำคัญ ก่อนประมวลผลด้วย Machine Learning บน Altair AI Studio (RapidMiner) ซึ่งพบว่า Random Forest ให้ผลลัพธ์แม่นยำที่สุดด้วยค่า $R^2$ สูงถึง 96.70% ($RMSE = 514.03$) โดยมีปัจจัยหลักคือ ฤดูกาล, ช่วงเวลา และกำลังการผลิตในภาคกลาง/มหานคร ผลลัพธ์นี้สามารถนำไปต่อยอดวางแผนการจ่ายไฟและบริหารพลังงานระดับประเทศได้อย่างมีประสิทธิภาพ
                             </p>
                         </div>
                         <div class="space-y-4">
                             <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
                                 <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
                                 <p class="text-[10px] text-slate-500 font-medium">
-                                    Cleaned datasets, identified energy patterns.
+                                    Cleaned 8.8k records & built RF model with 96.7% R² accuracy.
                                 </p>
                             </div>
                             <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
                             <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
-                                <a href="images/ชื่อไฟล์รายงานของคุณ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+                                <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
     <i class="fa-solid fa-chart-line"></i>
     ดูรายงาน
 </a>
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </button>
-                                <button onclick="openLightbox(['images/Projectr01.webp', 'images/Projectr02.webp'], 'Electricity Thailand - ภาพแดชบอร์ดสรุปวิเคราะห์ข้อมูลกระแสไฟฟ้า')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                <button onclick="openLightbox(['images/Projectr01.webp', 'images/Projectr01.1.webp'], 'ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                     ภาพเพิ่มเติม
                                 </button>
