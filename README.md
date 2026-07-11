@@ -669,6 +669,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                         </div>
                     </div>
                 </div>
+            </div>
 
             <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอน (Horizontal Scroll Progress Bar) -->
             <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
@@ -676,7 +677,6 @@ I am highly motivated to secure an internship where I can gain hands-on experien
             </div>
         </div>
     </section>
-
     <!-- [ส่วนใบเซอร์และการอบรม - CERTIFICATIONS & TRAINING]: สไลด์แนวนอนและเส้นแถบสถานะเลื่อน -->
     <section id="certifications" class="py-12 relative z-10 border-t border-slate-100 bg-slate-50/30 overflow-hidden">
         <!-- [ส่วนประกอบพื้นหลังเฉพาะจุด]: ลูกบอลแสงออร่าจำลองสไตล์หน้าแรกที่มีการเล่นสีสดใสพรีเมียม -->
