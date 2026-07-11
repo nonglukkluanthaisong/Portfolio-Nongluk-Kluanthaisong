@@ -582,7 +582,7 @@
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </a>
-                            <button onclick="openLightbox('https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=800&auto=format&fit=crop', 'TrueID App Redesign - ภาพจำลองอินเตอร์เฟสผู้ใช้งาน')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                            <button onclick="openReport('Electricity Thailand')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5">
                                 <i class="fa-solid fa-images text-brand-600"></i>
                                 ภาพเพิ่มเติม
                             </button>
@@ -604,8 +604,8 @@
                                 <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                ปรับปรุง UI/UX บนแอป TrueID ผ่าน User Research และวิเคราะห์พฤทีอกรรม เพื่อสร้าง Interactive Prototype บน Figma
+                            <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
+                                ปรับปรุงการออกแบบแอปพลิเคชัน TrueID โดยใช้ Figma จากการทำ Usability Testing กับกลุ่มผู้ใช้ 10 คน เพื่อลดความซับซ้อนของระบบนำทาง และเพิ่มฟีเจอร์อย่างการชำระเงินด้วย QR Code โดยบรรลุคะแนนความพึงพอใจที่ 3.80/5.00 และคะแนนความง่ายในการเรียนรู้สูงถึง 4.15/5.00
                             </p>
                         </div>
                         <div class="space-y-4">
@@ -651,7 +651,7 @@
                                 <span class="text-[10px] text-slate-400 font-mono">Jan 2024</span>
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                            <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
                                 การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี ผสานกราฟิกสามมิติเพื่อส่งเสริมการเรียนรู้พิพิธภัณฑ์ยุคใหม่
                             </p>
                         </div>
