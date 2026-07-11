@@ -911,8 +911,6 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                         </div>
                     </div>
                 </div>
-                
-            </div>
 
             <!-- กิจกรรมย่อย 3 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
@@ -937,9 +935,6 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                         </div>
                     </div>
                 </div>
-                
-            </div>
-
 
             <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอนของกิจกรรม -->
             <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
