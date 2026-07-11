@@ -1073,20 +1073,26 @@ I am highly motivated to secure an internship where I can gain hands-on experien
     </footer>
 
     <!-- [หน้าต่างเสริมป๊อปอัพ - LIGHTBOX]: สำหรับซูมขยายและอ่านใบประกาศนียบัตรอย่างคมชัด -->
-    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4">
-        <div class="relative max-w-4xl w-full flex flex-col max-h-[90vh]">
-            <!-- ปุ่มกดปิดที่มุมขวาบนนอกกรอบรูปภาพ -->
-            <button onclick="closeLightbox()" class="absolute -top-14 right-0 text-white/80 hover:text-white text-3xl w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all">
-                &times;
-            </button>
-            <div class="bg-white rounded-3xl p-4 border border-slate-100 overflow-hidden flex flex-col justify-center items-center shadow-2xl">
-                <!-- ตําแหน่งจัดวางภาพซูมใน Lightbox -->
-                <img id="lightboxImage" src="" alt="Certificate View" class="max-w-full max-h-[70vh] rounded-2xl object-contain shadow-lg">
-                <!-- คำอธิบายภาพใต้รูปภาพขยาย -->
-                <p id="lightboxCaption" class="text-sm text-slate-700 mt-4 font-bold text-center"></p>
-            </div>
+    <!-- ==================== LIGHTBOX MODAL (ส่วนแสดงภาพขยาย) ==================== -->
+<div id="lightboxModal" onclick="closeLightbox()" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4">
+    
+    <!-- กล่องป๊อปอัพสีขาว -->
+    <div onclick="event.stopPropagation()" class="relative bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl flex flex-col items-center">
+        
+        <!-- 🔴 ปุ่มปิด (X) มุมขวาบน -->
+        <button type="button" onclick="closeLightbox()" class="absolute -top-3 -right-3 w-10 h-10 flex items-center justify-center rounded-full bg-red-500 hover:bg-red-600 text-white shadow-lg transition-transform hover:scale-110 z-50 cursor-pointer">
+            <i class="fa-solid fa-xmark text-xl font-bold"></i>
+        </button>
+
+        <!-- รูปภาพ -->
+        <div class="w-full flex justify-center mb-3 overflow-hidden rounded-xl">
+            <img id="lightboxImage" src="" alt="" class="max-h-[55vh] w-auto object-contain rounded-xl">
         </div>
+
+        <!-- คำบรรยายใต้ภาพ -->
+        <p id="lightboxCaption" class="text-xs sm:text-sm font-semibold text-slate-700 text-center leading-relaxed px-4"></p>
     </div>
+</div>
 
     <!-- [หน้าต่างเสริมป๊อปอัพ - CV RESUME ORIGINAL]: สำหรับแสดงประวัติฉบับภาพอ้างอิง Nongluk.cv.jpg เต็มรูปแบบ -->
     <div id="cvModal" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4">
