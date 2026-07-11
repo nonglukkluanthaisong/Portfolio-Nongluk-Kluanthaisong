@@ -582,8 +582,8 @@
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </a>
-                            <button onclick="openLightbox(['images/Projeacts01.webp', 'Projeacts01.1.webp'], 'TrueID App Redesign - ภาพจำลองอินเตอร์เฟสผู้ใช้งาน')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
-                                <i class="fa-solid fa-images text-brand-600"></i>
+                            <button onclick="openLightbox('images/AA.webp', 'Electricity Demand Forecasting - บรรยากาศการนำเสนอโปรเจกต์พยากรณ์การใช้ไฟฟ้าในประเทศไทย')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                    <i class="fa-solid fa-images text-brand-600"></i>
                                 ภาพเพิ่มเติม
                             </button>
                             </div>
