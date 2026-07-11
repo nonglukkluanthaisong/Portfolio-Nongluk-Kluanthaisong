@@ -636,7 +636,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                 <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
-                        <img src="images/B.png" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <img src="images/CC.webp" alt="Virtual Dinosaur Exploration" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -645,7 +645,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                 <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">AUGMENTED REALITY</span>
                                 <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Virtual Dinosaur Exploration with AR/VR</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Virtual Dinosaur Exploration</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
                             รับผิดชอบการออกแบบสื่อการเรียนรู้ AR เชิงโต้ตอบ โดยจำลองการพัฒนาสื่อสำหรับโซนนิทรรศการจัดแสดงสายพันธุ์ไดโนเสาร์ในพิพิธภัณฑ์ เพื่อเปลี่ยนป้ายข้อมูลประวัติศาสตร์แบบเดิมให้กลายเป็นประสบการณ์ที่ผู้เข้าชมสัมผัสได้จริง ช่วยดึงดูดสายตา กระตุ้นการมีส่วนร่วมในพื้นที่จัดแสดง และยกระดับการเรียนรู้ผ่านนิทรรศการให้มีความสนุก มีชีวิตชีวา และน่าจดจำยิ่งขึ้น
                             </p>
@@ -662,7 +662,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                 <a href="images/TrueID.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
                                     ดูรายงาน
                                 </a>
-                                <button onclick="openLightbox('images/CC.webp', 'TrueID App Redesign - ภาพจำลองอินเตอร์เฟสผู้ใช้งาน')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                <button onclick="openLightbox('images/CC.webp', 'Virtual Dinosaur Exploration with AR/VR - สสื่อ AR เชิงโต้ตอบสำหรับนิทรรศการพิพิธภัณฑ์')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                     ภาพเพิ่มเติม
                                 </button>
