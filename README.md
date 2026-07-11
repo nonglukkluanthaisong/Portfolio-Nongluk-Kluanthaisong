@@ -1073,26 +1073,73 @@ I am highly motivated to secure an internship where I can gain hands-on experien
     </footer>
 
     <!-- [หน้าต่างเสริมป๊อปอัพ - LIGHTBOX]: สำหรับซูมขยายและอ่านใบประกาศนียบัตรอย่างคมชัด -->
-    <!-- ==================== LIGHTBOX MODAL (ส่วนแสดงภาพขยาย) ==================== -->
-<div id="lightboxModal" onclick="closeLightbox()" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4">
+    <!-- ==================== LIGHTBOX MODAL (เวอร์ชันแก้ไขขนาด + สั่งปิด) ==================== -->
+<div id="lightboxModal" class="fixed inset-0 z-[9999] hidden bg-black/80 flex items-center justify-center p-4">
     
-    <!-- กล่องป๊อปอัพสีขาว -->
-    <div onclick="event.stopPropagation()" class="relative bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl flex flex-col items-center">
+    <!-- กล่อง Modal สีขาว ขนาดเล็ก (max-w-md) -->
+    <div class="relative bg-white rounded-2xl max-w-md w-full p-4 shadow-2xl flex flex-col items-center">
         
-        <!-- 🔴 ปุ่มปิด (X) มุมขวาบน -->
-        <button type="button" onclick="closeLightbox()" class="absolute -top-3 -right-3 w-10 h-10 flex items-center justify-center rounded-full bg-red-500 hover:bg-red-600 text-white shadow-lg transition-transform hover:scale-110 z-50 cursor-pointer">
-            <i class="fa-solid fa-xmark text-xl font-bold"></i>
+        <!-- 🔴 ปุ่มปิด (X) สีแดงเด่นชัด อยู่มุมขวาบน -->
+        <button type="button" id="customCloseBtn" class="absolute -top-3 -right-3 w-10 h-10 flex items-center justify-center rounded-full bg-red-600 hover:bg-red-700 text-white font-bold shadow-xl z-[10000] cursor-pointer text-xl">
+            ✕
         </button>
 
-        <!-- รูปภาพ -->
-        <div class="w-full flex justify-center mb-3 overflow-hidden rounded-xl">
-            <img id="lightboxImage" src="" alt="" class="max-h-[55vh] w-auto object-contain rounded-xl">
+        <!-- รูปภาพ ปรับความสูงเหลือ max-h-[35vh] (เล็กกะทัดรัด เห็นครบทั้งกล่อง) -->
+        <div class="w-full flex justify-center my-2 overflow-hidden rounded-xl bg-slate-50">
+            <img id="lightboxImage" src="" alt="" class="max-h-[35vh] w-auto object-contain rounded-xl">
         </div>
 
         <!-- คำบรรยายใต้ภาพ -->
-        <p id="lightboxCaption" class="text-xs sm:text-sm font-semibold text-slate-700 text-center leading-relaxed px-4"></p>
+        <p id="lightboxCaption" class="text-xs sm:text-sm font-semibold text-slate-700 text-center leading-relaxed px-2"></p>
     </div>
 </div>
+
+<!-- สคริปต์ควบคุมการเปิด-ปิด (ทำงานอัตโนมัติ) -->
+<script>
+    // 1. ฟังก์ชันสั่งเปิดภาพ (ทำงานแทนของเดิม)
+    function openLightbox(imgSrc, caption) {
+        const modal = document.getElementById('lightboxModal');
+        const img = document.getElementById('lightboxImage');
+        const cap = document.getElementById('lightboxCaption');
+
+        if (img) img.src = imgSrc;
+        if (cap) cap.innerText = caption;
+        if (modal) modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+    }
+
+    // 2. ฟังก์ชันสั่งปิด
+    function closeLightbox() {
+        const modal = document.getElementById('lightboxModal');
+        if (modal) modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+    }
+
+    // 3. ผูกคำสั่งกดปิด (กดปุ่ม X / กดสีดำรอบๆ / กด ESC)
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('lightboxModal');
+        const btn = document.getElementById('customCloseBtn');
+
+        if (btn) {
+            btn.onclick = function(e) {
+                e.stopPropagation();
+                closeLightbox();
+            };
+        }
+
+        if (modal) {
+            modal.onclick = function(e) {
+                if (e.target === modal) {
+                    closeLightbox();
+                }
+            };
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+</script>
 
     <!-- [หน้าต่างเสริมป๊อปอัพ - CV RESUME ORIGINAL]: สำหรับแสดงประวัติฉบับภาพอ้างอิง Nongluk.cv.jpg เต็มรูปแบบ -->
     <div id="cvModal" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4">
