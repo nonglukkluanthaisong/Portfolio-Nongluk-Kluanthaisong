@@ -661,7 +661,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                 <a href="images/TrueID.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
                                     ดูรายงาน
                                 </a>
-                                <button onclick="openLightbox('images/CC.webp', 'Virtual Dinosaur Exploration with AR/VR - สสื่อ AR เชิงโต้ตอบสำหรับนิทรรศการพิพิธภัณฑ์')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                <button onclick="openLightbox('images/CC.webp', 'Virtual Dinosaur Exploration with AR/VR - สื่อ AR เชิงโต้ตอบสำหรับนิทรรศการพิพิธภัณฑ์')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                     ภาพเพิ่มเติม
                                 </button>
@@ -847,7 +847,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <h2 class="fancy-header">Activities</h2>
                         </div>
                     </div>
-                    <p class="text-slate-500 mt-2 text-sm">กิจกรรมและงานช่วยเหลือคณะเพื่อสาธารณประโยชน์ที่ได้เข้าร่วม (สไลด์เลื่อนด้านข้าง)</p>
+                    <p class="text-slate-500 mt-2 text-sm">กิจกรรมและงานช่วยเหลือคณะเพื่อสาธารณประโยชน์ที่ได้เข้าร่วม (สามารถเลื่อนชมผลงานได้ที่นี่)</p>
                 </div>
                 
                 <!-- ปุ่มสไลด์ควบคุมทิศทาง ซ้าย-ขวา -->
