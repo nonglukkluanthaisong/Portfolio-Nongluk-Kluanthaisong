@@ -582,7 +582,7 @@
                                     <i class="fa-solid fa-chart-line"></i>
                                     ดูรายงาน
                                 </a>
-                            <button onclick="openLightbox(['images/Projects01.webp', 'images/Projects01.1.webp'], 'Electricity Demand Forecasting - ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                            <button onclick="openLightbox(["images/Projectr01.webp", 'Electricity Demand Forecasting - ภาพบันทึกการนำเสนอ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                 <i class="fa-solid fa-images text-brand-600"></i>
                                 ภาพเพิ่มเติม
                             </button>
