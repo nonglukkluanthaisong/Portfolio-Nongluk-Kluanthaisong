@@ -763,7 +763,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                 <!-- ใบประกาศนียบัตร 3 -->
                 <div class="snap-start shrink-0 w-[280px] sm:w-[320px] glass-card rounded-2xl overflow-hidden flex flex-col group bg-slate-50/50">
                     <div class="relative aspect-[1.414/1] bg-slate-100 overflow-hidden cursor-pointer" onclick="openLightbox('images/Cer3.webp', 'Microsoft Power BI Certificate')">
-                        <img src="images/Cer.webp3" alt="Microsoft Power BI Certificate" class="w-full h-full object-cover opacity-90 group-hover:scale-102 transition-transform duration-500">
+                        <img src="images/Cer3.webp" alt="Microsoft Power BI Certificate" class="w-full h-full object-cover opacity-90 group-hover:scale-102 transition-transform duration-500">
                         <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="bg-brand-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-md">
                                 <i class="fa-solid fa-expand"></i> View
@@ -806,8 +806,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
 
                 <!-- ใบประกาศนียบัตร 5 -->
                 <div class="snap-start shrink-0 w-[280px] sm:w-[320px] glass-card rounded-2xl overflow-hidden flex flex-col group bg-slate-50/50">
-                    <div class="relative aspect-[1.414/1] bg-slate-100 overflow-hidden cursor-pointer" onclick="openLightbox('images/Cer4.jpeg', 'เป็นผู้ผ่านการอบรมเชิงปฏิบัติการหลักสูตร กลยุทธ์การเพิ่มยอดขายให้ธุรกิจด้วย LINE Official Account (LINE OA)')">
-                        <img src="images/Cer4.jpeg" alt="LINE OA Strategy Training" class="w-full h-full object-cover opacity-90 group-hover:scale-102 transition-transform duration-500">
+                    <div class="relative aspect-[1.414/1] bg-slate-100 overflow-hidden cursor-pointer" onclick="openLightbox('images/Cer5.jpeg', 'เป็นผู้ผ่านการอบรมเชิงปฏิบัติการหลักสูตร กลยุทธ์การเพิ่มยอดขายให้ธุรกิจด้วย LINE Official Account (LINE OA)')">
+                        <img src="images/Cer5.jpeg" alt="LINE OA Strategy Training" class="w-full h-full object-cover opacity-90 group-hover:scale-102 transition-transform duration-500">
                         <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="bg-brand-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-lg">
                                 <i class="fa-solid fa-expand"></i> View
