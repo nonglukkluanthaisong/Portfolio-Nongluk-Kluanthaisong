@@ -566,7 +566,7 @@
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Demand Forecasting</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                            โปรเจกต์พยากรณ์ไฟฟ้าในไทย นำข้อมูลจริงรายชั่วโมง 8,806 รายการ จาก Zenodo (2025) มาทำ Data Cleaning 9 ปัจจัย และประมวลผลด้วย Machine Learning บน Altair AI Studio พบว่า Random Forest แม่นยำที่สุดด้วย R² 96.70% (RMSE = 514.03) 
+                            โปรเจกต์พยากรณ์ไฟฟ้าในไทย นำข้อมูลจริงรายชั่วโมง 8,806 รายการ จาก Zenodo (2024) มาผ่านการเตรียมข้อมูล และประมวลผลด้วย Machine Learning บน Altair AI Studio พบว่า Random Forest แม่นยำที่สุดด้วย R² 96.70% (RMSE = 514.03) 
                             </p>
                         </div>
                         <div class="space-y-4">
