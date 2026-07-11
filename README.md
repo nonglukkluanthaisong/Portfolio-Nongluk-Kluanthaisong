@@ -879,8 +879,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <span>DEC 2024</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">MSU Open House 2024</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-left">
-                            สนับสนุนกิจกรรมบูธ Open House โดยการแนะนำ/ประชาสัมพันธ์ห ลักสูตรธุรกิจดิจิทัลและระบบสารสนเทศ คอยให้คำแนะนำ/นำทางผู้เข้าร่วมงาน และช่วยเหลือนักเรียน/ผู้เรียนระหว่างทำกิจกรรมที่บูธ
+                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
+                            สนับสนุนการจัดกิจกรรมบูธ Open House 2024 โดยรับหน้าที่ประชาสัมพันธ์หลักสูตรธุรกิจดิจิทัลและระบบสารสนเทศ อำนวยความสะดวกและให้ข้อมูลแก่ผู้เข้าร่วมงาน ตลอดจนดูแลช่วยเหลือนักเรียนในการทำกิจกรรมต่างๆ ภายในบูธ
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
                             <i class="fa-solid fa-users text-brand-600"></i> Supported Open House activities.
@@ -890,7 +890,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
 
                 <!-- กิจกรรมย่อย 2 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
-                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac2.png', 'MBS Freshy Day Staff')">
+                    <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac2.png', 'MBS Freshy Day Staff-ช่วยจัดเตรียมสถานที่ประสานงานผู้เข้าร่วมงาน / ดูแลอำนวยความสะดวก')">
                         <img src="images/Ac2.png" alt="MBS Freshy Day Staff" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
@@ -903,8 +903,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <span>JUL 2025</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">MBS Fresh Day & Fresh Night</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-left">
-                            สนับสนุนการดำเนินงานในส่วนสตาฟหน้างาน โดยร่วมจัดเตรียมสถานที่ให้มีความพร้อม ปฏิบัติหน้าที่ประสานงานและดูแลต้อนรับผู้เข้าร่วมงานตลอดจนช่วยควบคุมดูแลความเรียบร้อยโดยรวมภายในงาน และคอยให้คำแนะนำพร้อมนำทางผู้เข้าร่วมงานไปยังจุดลงทะเบียนอำนวยความสะดวกให้กับนักศึกษาใหม่ 
+                        <p class="text-slate-500 text-xs leading-relaxed mb-3 text-justify">
+                            สนับสนุนการดำเนินงานในส่วนสตาฟหน้างาน โดยร่วมจัดเตรียมสถานที่ให้มีความพร้อม ปฏิบัติหน้าที่ประสานงานและดูแลต้อนรับผู้เข้าร่วมงานตลอดจนช่วยควบคุมดูแลความเรียบร้อยโดยรวมภายในงาน 
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
                             <i class="fa-solid fa-handshake text-indigo-500"></i> Assisted with registration.
