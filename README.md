@@ -645,7 +645,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                 <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">UI/UX REDESIGN</span>
                                 <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Virtual Dinosaur Exploration with AR/VR</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
                             รับผิดชอบการออกแบบสื่อการเรียนรู้ AR เชิงโต้ตอบ โดยจำลองการพัฒนาสื่อสำหรับโซนนิทรรศการจัดแสดงสายพันธุ์ไดโนเสาร์ในพิพิธภัณฑ์ เพื่อเปลี่ยนป้ายข้อมูลประวัติศาสตร์แบบเดิมให้กลายเป็นประสบการณ์ที่ผู้เข้าชมสัมผัสได้จริง ช่วยดึงดูดสายตา กระตุ้นการมีส่วนร่วมในพื้นที่จัดแสดง และยกระดับการเรียนรู้ผ่านนิทรรศการให้มีความสนุก มีชีวิตชีวา และน่าจดจำยิ่งขึ้น
                             </p>
@@ -654,7 +654,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
                                 <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
                                 <p class="text-[10px] text-slate-500 font-medium">
-                                    Designed high-fidelity layouts in Figma.
+                                    Created mockups with 3D model integration.
                                 </p>
                             </div>
                             <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
