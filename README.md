@@ -939,7 +939,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
             <!-- กิจกรรมย่อย 4 -->
                 <div class="snap-start shrink-0 w-[290px] sm:w-[380px] reveal glass-card rounded-2xl overflow-hidden group bg-white shadow-sm">
                     <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openLightbox('images/Ac3.webp', 'MBS Samphao Fah Games 2024 - ดูแลจัดเตรียมสถานที่ ฝึกซ้อมสแตนเชียร์ และเป็นผู้ถือพร็อพประกอบการแสดง')">
-                        <img src="images/Ac3.webp" alt="MBS Samphao Fah Games 2024" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <img src="images/Ac3.1.webp" alt="MBS Samphao Fah Games 2024" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                         <div class="absolute bottom-3 left-4">
                             <span class="bg-indigo-600 text-white text-[9px] font-bold px-2.5 py-1.5 rounded-lg uppercase tracking-wider font-mono shadow-sm">Stand Cheer & Venue Staff</span>
