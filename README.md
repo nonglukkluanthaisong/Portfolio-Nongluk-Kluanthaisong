@@ -594,7 +594,46 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                     </div>
                 </div>
 
-                <!-- โครงการที่ 2: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที -->
+                <!-- โครงการที่ 2: สหกรณ์โคนมโคกก่อ (ปรับปรุงรายละเอียดปุ่มตามดีไซน์อ้างอิงจากรูปภาพ image_8634da.png) -->
+                <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
+                    <div class="relative h-56 bg-slate-100 overflow-hidden">
+                        <img src="images/Projects01.webp" alt="Electricity Forecasting Work" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2.5">
+                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">FIELD RESEARCH & PROCESS STUDY</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">THE MILK PRODUCTION PROCESS</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
+                            ลงพื้นที่สัมภาษณ์ผู้ปฏิบัติงานและศึกษากระบวนการผลิต ณ สหกรณ์ผู้เลี้ยงโคนม มหาสารคาม จำกัด สัมภาษณ์ข้อมูลขั้นตอนการดำเนินงานจริง เก็บรวบรวมรายละเอียดเพื่อนำมาวิเคราะห์และจัดทำรายงานสรุปกระบวนการผลิต 
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
+                                <p class="text-[10px] text-slate-500 font-medium">
+                                    Cleaned 8.8k records & built RF model with 96.7% R² accuracy.
+                                </p>
+                            </div>
+                            <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
+                            <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
+                                <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    ดูรายงาน
+                                </a>
+                            <button onclick="openLightbox('images/AA.webp', 'Electricity Demand Forecasting - บรรยากาศการนำเสนอโปรเจกต์พยากรณ์การใช้ไฟฟ้าในประเทศไทย')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                    <i class="fa-solid fa-images text-brand-600"></i>   
+                                    ภาพเพิ่มเติม
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- โครงการที่ 3: ปรับแต่งดีไซน์แอปพลิเคชัน TrueID ของฝ่ายไอที -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
                         <img src="images/B.png" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
@@ -632,7 +671,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                     </div>
                 </div>
 
-                <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
+                <!-- โครงการที่ 4: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
                     <div class="relative h-56 bg-slate-100 overflow-hidden">
                         <img src="images/CC.webp" alt="Virtual Dinosaur Exploration" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
