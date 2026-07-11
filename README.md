@@ -1386,5 +1386,30 @@ function openLightbox(imgSrc, caption) {
             }, 3000);
         }
     </script>
+    <!-- ==================== FIX LIGHTBOX IMAGE CROP ==================== -->
+<style>
+  /* 1. ขยายกล่อง Modal ให้กว้างขึ้นเพื่อรองรับภาพแนวนอน */
+  #lightboxModal > div {
+    max-width: 90vw !important;  /* ขยายกล่องกว้างได้ถึง 90% ของหน้าจอ */
+    width: 850px !important;     /* กำหนดความกว้างสูงสุด 850px */
+    overflow: visible !important; /* ป้องกันไม่ให้ขอบภาพถูกครอบตัด */
+  }
+
+  /* 2. ปลดล็อกตัวครอบรูปภาพ ไม่ให้ตัดขอบรูป */
+  #lightboxModal div {
+    overflow: visible !important;
+  }
+
+  /* 3. บังคับรูปภาพให้ย่อสเกลพอดีกล่อง เห็นครบ 100% ไม่โดนตัดขอบซ้าย-ขวา */
+  #lightboxImage {
+    max-height: 60vh !important;    /* ป้องกันรูปสูงเกินจอ */
+    max-width: 100% !important;     /* ป้องกันรูปกว้างเกินกล่อง */
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important; /* ย่อรูปให้เห็นครบทั้งใบ ไม่ครอบตัด */
+    display: block !important;
+    margin: 0 auto !important;
+  }
+</style>
 </body>
 </html>
