@@ -1,4 +1,4 @@
-<html lang="th" class="scroll-smooth">
+<img width="605" height="423" alt="image" src="https://github.com/user-attachments/assets/0a78622d-15a0-4c38-a7a8-5f76a19d99ac" /><html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -587,8 +587,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                     ดูรายงาน
                                 </a>
                             <button onclick="openLightbox('images/AA.webp', 'Electricity Demand Forecasting - บรรยากาศการนำเสนอโปรเจกต์พยากรณ์การใช้ไฟฟ้าในประเทศไทย')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
-                                    <i class="fa-solid fa-images text-brand-600"></i>
-                                ภาพเพิ่มเติม
+                                    <i class="fa-solid fa-images text-brand-600"></i>   
+                                    ภาพเพิ่มเติม
                             </button>
                             </div>
                         </div>
