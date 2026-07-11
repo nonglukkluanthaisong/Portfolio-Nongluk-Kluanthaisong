@@ -590,6 +590,11 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                 ภาพเพิ่มเติม
                             </button>
+                            <!-- ส่วนปุ่มกดปิดท้ายกล่อง -->
+                            <div class="mt-5 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-400 font-mono">
+                                <span>Ref: Nongluk.cv.jpg</span>
+                                    <button onclick="closeCVModal()" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md shadow-brand-600/10">Close Viewer</button>
+                            </div>
                             </div>
                         </div>
                     </div>
