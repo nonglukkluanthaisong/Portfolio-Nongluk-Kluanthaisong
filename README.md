@@ -1249,18 +1249,19 @@ I am highly motivated to secure an internship where I can gain hands-on experien
         }
 
         // 7. คำสั่งเปิดหน้าต่างแสดงรายละเอียดซูมภาพใบรับรอง (Lightbox Gallery Handlers)
-        function openLightbox(imgSrc, caption) {
-            document.getElementById('lightboxImage').src = imgSrc;
-            document.getElementById('lightboxCaption').innerText = caption;
-            document.getElementById('lightboxModal').classList.remove('hidden'); // แสดงป๊อปอัพขึ้นมา
-            document.body.classList.add('overflow-hidden');
-        }
+function openLightbox(imgSrc, caption) {
+    const imgElement = document.getElementById('lightboxImage');
 
-        // ปิดกล่อง Lightbox ใบประกาศนียบัตร
-        function closeLightbox() {
-            document.getElementById('lightboxModal').classList.add('hidden'); // ซ่อนป๊อปอัพลงไป
-            document.body.classList.remove('overflow-hidden');
-        }
+    // บังคับย่อขนาดรูปไม่ให้ล้นจอ และคงสัดส่วนเดิมไว้
+    imgElement.style.maxHeight = '60vh';
+    imgElement.style.maxWidth = '90vw';
+    imgElement.style.objectFit = 'contain';
+
+    imgElement.src = imgSrc;
+    document.getElementById('lightboxCaption').innerText = caption;
+    document.getElementById('lightboxModal').classList.remove('hidden'); // แสดงป๊อปอัพขึ้นมา
+    document.body.classList.add('overflow-hidden');
+}
 
         // 7.5 ฟังก์ชันเปิดและจำลองไฟล์รายงานโครงการหลัก
         function openReport(projectName) {
