@@ -635,25 +635,17 @@ I am highly motivated to secure an internship where I can gain hands-on experien
 
                 <!-- โครงการที่ 3: สื่อการเรียนรู้เสมือนจริงสามมิติ (AR Virtual Museum) -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-[420px] md:w-[460px] reveal glass-card rounded-2xl overflow-hidden flex flex-col group shadow-sm bg-white">
-                    <div class="relative h-56 bg-slate-900 overflow-hidden">
-                        <!-- โหลดตัวอย่างวิดีโอจำลองสามมิติมูฟเม้นท์ล้ำยุค เพื่อเป็นตัวแทนของเทคโนโลยี AR -->
-                        <video class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-750" autoplay loop muted playsinline>
-                            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054273b1e2e3dbd0ec0b0213ef2c3c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none"></div>
-                        <!-- ไอคอนลอยสัญลักษณ์ความเคลื่อนไหววิดีโอที่มุมขวาบน -->
-                        <div class="absolute top-3 right-3 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md flex items-center gap-1">
-                            <i class="fa-solid fa-play animate-pulse"></i> VIDEO DEMO
-                        </div>
+                    <div class="relative h-56 bg-slate-100 overflow-hidden">
+                        <img src="images/B.png" alt="TrueID UI/UX Redesign" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
-                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">AUGMENTED REALITY</span>
-                                <span class="text-[10px] text-slate-400 font-mono">Jan 2024</span>
+                                <span class="bg-brand-50 text-brand-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-brand-100">UI/UX REDESIGN</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Nov 2024</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
+                            <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">TrueID App Redesign</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
                                 การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี รับผิดชอบการออกแบบสื่อการเรียนรู้ AR เชิงโต้ตอบ (Interactive AR) โดยจำลองการพัฒนาสื่อสำหรับโซนนิทรรศการจัดแสดงสายพันธุ์ไดโนเสาร์ในพิพิธภัณฑ์ เพื่อเปลี่ยนป้ายข้อมูลประวัติศาสตร์แบบเดิมให้กลายเป็นประสบการณ์ที่ผู้เข้าชมสัมผัสได้จริง ช่วยดึงดูดสายตา กระตุ้นการมีส่วนร่วมในพื้นที่จัดแสดง (On-site Engagement) และยกระดับการเรียนรู้ผ่านนิทรรศการให้มีความสนุก มีชีวิตชีวา และน่าจดจำยิ่งขึ้น
                             </p>
@@ -662,16 +654,15 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl flex items-start gap-2">
                                 <i class="fa-solid fa-circle-check text-brand-600 text-xs mt-0.5"></i>
                                 <p class="text-[10px] text-slate-500 font-medium">
-                                    Created mockups with 3D model integration.
+                                    Designed high-fidelity layouts in Figma.
                                 </p>
                             </div>
                             <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
                             <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
                                 <a href="images/TrueID.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
-                                    <i class="fa-solid fa-book-open"></i>
                                     ดูรายงาน
-                                </button>
-                                <button onclick="openLightbox('images/CC.webp', 'AR Learning Media - สื่อการเรียนรู้ AR ไดโนเสาร์สามมิติ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                </a>
+                                <button onclick="openLightbox('images/CC.webp', 'TrueID App Redesign - ภาพจำลองอินเตอร์เฟสผู้ใช้งาน')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                     ภาพเพิ่มเติม
                                 </button>
@@ -679,8 +670,6 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                         </div>
                     </div>
                 </div>
-
-            </div>
 
             <!-- เส้นแถบสถานะระบุการเลื่อนสไลด์แนวนอน (Horizontal Scroll Progress Bar) -->
             <div class="mt-8 max-w-sm mx-auto bg-slate-200 h-1.5 rounded-full overflow-hidden relative">
