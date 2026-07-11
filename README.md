@@ -565,7 +565,7 @@
                                 <span class="text-[10px] text-slate-400 font-mono">Oct 2025</span>
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">Electricity Demand Forecasting</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                            <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
                             โปรเจกต์พยากรณ์ไฟฟ้าในไทย รวบรวม ทำความสะอาด และวิเคราะห์ข้อมูลโครงการเพื่อระบุรูปแบบและแนวโน้มที่สำคัญ ผ่าน Machine Learning บน Altair AI Studio โดยพบว่าแบบจำลอง Random Forest มีความแม่นยำสูงสุดด้วยค่า R² 96.70% (RMSE = 514.03) จากนั้นจัดทำรายงานและสื่อนำเสนอเพื่อสื่อสารผลการวิเคราะห์ 
                             </p>
                         </div>
