@@ -655,7 +655,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             </div>
                             <h3 class="text-xl font-bold text-slate-800 mb-1.5 group-hover:text-brand-600 transition-colors">AR Learning Media</h3>
                             <p class="text-slate-600 text-xs leading-relaxed mb-3 text-justify">
-                                การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี ผสานกราฟิกสามมิติเพื่อส่งเสริมการเรียนรู้พิพิธภัณฑ์ยุคใหม่
+                                การจัดทำสื่อการเรียนรู้จำลองจำลองด้วย AR เทคโนโลยี รับผิดชอบการออกแบบสื่อการเรียนรู้ AR เชิงโต้ตอบ (Interactive AR) โดยจำลองการพัฒนาสื่อสำหรับโซนนิทรรศการจัดแสดงสายพันธุ์ไดโนเสาร์ในพิพิธภัณฑ์ เพื่อเปลี่ยนป้ายข้อมูลประวัติศาสตร์แบบเดิมให้กลายเป็นประสบการณ์ที่ผู้เข้าชมสัมผัสได้จริง ช่วยดึงดูดสายตา กระตุ้นการมีส่วนร่วมในพื้นที่จัดแสดง (On-site Engagement) และยกระดับการเรียนรู้ผ่านนิทรรศการให้มีความสนุก มีชีวิตชีวา และน่าจดจำยิ่งขึ้น
                             </p>
                         </div>
                         <div class="space-y-4">
@@ -671,7 +671,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                     <i class="fa-solid fa-book-open"></i>
                                     ดูรายงาน
                                 </button>
-                                <button onclick="openLightbox('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop', 'AR Learning Media - ภาพต้นแบบสามมิติเสมือนจริงบนหน้าจอมือถือ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
+                                <button onclick="openLightbox('images/CC.webp', 'AR Learning Media - สื่อการเรียนรู้ AR ไดโนเสาร์สามมิติ')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>
                                     ภาพเพิ่มเติม
                                 </button>
