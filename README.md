@@ -967,7 +967,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             เข้าร่วมฟังเสวนาในหัวข้อ EduTech for Thailand's Future เพื่ออัปเดตแนวคิดการเรียนรู้ยุคใหม่ด้วย Cybersecurity และ AI เรียนรู้การนำเทคโนโลยีและปัญญาประดิษฐ์มาประยุกต์ใช้ในการศึกษาอย่างปลอดภัย
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
-                            <i class="fa-solid fa-users text-brand-600"></i> Supported Open House activities.
+                            <i class="fa-solid fa-users text-brand-600"></i> Attended academic seminar on EdTech & AI.
                         </div>
                     </div>
                 </div>
@@ -991,7 +991,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             สนับสนุนการจัดงานกีฬาสำเภาฟ้าเกมส์ 2024 โดยรับหน้าที่จัดเตรียมสถานที่ คอยดูแลและร่วมฝึกซ้อมการแสดงสแตนด์เชียร์ประจำสี และร่วมเป็นหนึ่งในแสดงโชว์โดยรับหน้าที่ถือพร็อพประกอบการแสดง 
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
-                            <i class="fa-solid fa-handshake text-indigo-500"></i> Assisted with registration.
+                            <i class="fa-solid fa-handshake text-indigo-500"></i> Assisted with venue preparation and prop setup.
                         </div>
                     </div>
                 </div>
@@ -1015,7 +1015,7 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                             เข้าร่วมการอบรมเชิงปฏิบัติการ หลักสูตร "กลยุทธ์การเพิ่มยอดขายให้ธุรกิจด้วย LINE Official Account (LINE OA)" จัดโดย คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม เพื่อพัฒนาทักษะด้านการตลาดดิจิทัลและการจัดการช่องทางการขายออนไลน์
                         </p>
                         <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5 font-mono">
-                            <i class="fa-solid fa-handshake text-indigo-500"></i> Assisted with registration.
+                            <i class="fa-solid fa-handshake text-indigo-500"></i> Certified in LINE OA Sales Strategy.
                         </div>
                     </div>
                 </div>
