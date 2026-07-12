@@ -619,11 +619,8 @@ I am highly motivated to secure an internship where I can gain hands-on experien
                                 </p>
                             </div>
                             <!-- เพิ่มกลุ่มปุ่มสำหรับการคลิกดูรายงาน และภาพเพิ่มเติม -->
-                            <div class="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100">
-                                <a href="images/การพยากรณ์การใช้ไฟฟ้าในประเทศไทยด้วยเทคนิคการเรียนรู้ของเครื่อง.pdf" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-600/10 hover:shadow-brand-500/20 transform hover:-translate-y-0.5 no-underline">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                    ดูรายงาน
-                                </a>
+                            <div class="grid grid-cols-1 gap-2.5 pt-3 border-t border-slate-100">
+                                
                             <button onclick="openLightbox('images/โคนม1.1.png', 'The Milk Production Process - ภาพบรรยากาศการลงพื้นที่ศึกษาดูงานและการเตรียมความพร้อมก่อนเข้าชมพื้นที่ผลิตนม')" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-all transform hover:-translate-y-0.5">
                                     <i class="fa-solid fa-images text-brand-600"></i>   
                                     ภาพเพิ่มเติม
